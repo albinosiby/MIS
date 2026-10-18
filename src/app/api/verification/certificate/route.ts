@@ -1,0 +1,3 @@
+import {verifyCloudCertificate} from "@/features/cloud/server/public-actions";
+import {certificateVerificationResponseSchema} from "@/features/documents/schemas/certificate-verification.schema";
+export async function GET(request:Request){try{const certificate=await verifyCloudCertificate(new URL(request.url).searchParams.get("reference"));return Response.json(certificateVerificationResponseSchema.parse({valid:certificate!==null,certificate}),{headers:{"Cache-Control":"no-store"}});}catch{return Response.json({error:"Certificate status is unavailable or the reference is invalid."},{status:400,headers:{"Cache-Control":"no-store"}});}}

@@ -1,0 +1,11 @@
+import type { z } from "zod";
+import type { booksRequestSchema } from "../schemas/operations.schema.ts";
+export type BooksRequest = z.infer<typeof booksRequestSchema>;
+import type { copiesRequestSchema } from "../schemas/operations.schema.ts";
+export type CopiesRequest = z.infer<typeof copiesRequestSchema>;
+import type { loansRequestSchema } from "../schemas/operations.schema.ts";
+export type LoansRequest = z.infer<typeof loansRequestSchema>;
+import type { reservationsRequestSchema } from "../schemas/operations.schema.ts";
+export type ReservationsRequest = z.infer<typeof reservationsRequestSchema>;
+import type { libraryFinesRequestSchema } from "../schemas/operations.schema.ts";
+export type LibraryFinesRequest = z.infer<typeof libraryFinesRequestSchema>;

@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-18T12:14:18.912Z",
+  "passed": 6,
+  "total": 6,
+  "checks": [
+    {
+      "case": "Read preserved school workspace",
+      "passed": true
+    },
+    {
+      "case": "Existing synthetic schedule is disabled",
+      "passed": true
+    },
+    {
+      "case": "Queue an isolated disabled-schedule check",
+      "passed": true
+    },
+    {
+      "case": "Independent worker cancels the disabled schedule without a browser",
+      "passed": true
+    },
+    {
+      "case": "Worker decision has a persisted attempt audit",
+      "passed": true
+    },
+    {
+      "case": "No publication or school revision is changed",
+      "passed": true
+    }
+  ]
+}

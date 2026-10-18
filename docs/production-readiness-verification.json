@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-18T06:07:48.951447+00:00",
+  "scope": "Production readiness audit excluding payment gateway; targeted security and notice fixes, not complete product delivery",
+  "automatedTests": {
+    "passed": 87,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "uiBindingAudit": {
+    "controls": 356,
+    "unboundReviewItems": 0
+  },
+  "productionDependencies": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "supabaseAdvisors": [
+    {
+      "name": "auth_leaked_password_protection",
+      "title": "Leaked Password Protection Disabled",
+      "level": "WARN",
+      "facing": "EXTERNAL",
+      "categories": [
+        "SECURITY"
+      ],
+      "description": "Leaked password protection is currently disabled.",
+      "detail": "Supabase Auth prevents the use of compromised passwords by checking against HaveIBeenPwned.org. Enable this feature to enhance security.",
+      "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection",
+      "metadata": {
+        "entity": "Auth",
+        "type": "auth"
+      },
+      "cacheKey": "auth_leaked_password_protection"
+    }
+  ],
+  "fixes": [
+    "Archived academic years cannot be omitted or changed through workspace replacement",
+    "Teacher/staff message read scope and staff-identity author binding",
+    "Current guardian notice rights apply to reads and acknowledgements",
+    "Synthetic login hints, prefill, selectors and identity acceptance require explicit demo mode",
+    "Eligible students receive all-school notices and acknowledge them; guardian-only notices withheld"
+  ],
+  "browserChecks": [
+    {
+      "case": "Existing synthetic admin session redirects to login when demo mode is disabled",
+      "passed": true
+    },
+    {
+      "case": "Production login inputs empty; demo password/selector hidden",
+      "passed": true
+    },
+    {
+      "case": "Fresh synthetic login rejected when demo mode is disabled",
+      "passed": true
+    },
+    {
+      "case": "Existing synthetic session remains valid in explicitly enabled local demo",
+      "passed": true
+    },
+    {
+      "case": "Admin publishes all-school notice to Supabase; student sees it and not guardian-only notices",
+      "passed": true
+    },
+    {
+      "case": "Student acknowledgement persists after reload",
+      "passed": true
+    }
+  ],
+  "primaryLocalUrl": "http://127.0.0.1:3000/dashboard",
+  "remainingWork": "See production-readiness-audit.md. No claim of end-to-end production readiness."
+}

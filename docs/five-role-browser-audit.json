@@ -1,0 +1,684 @@
+{
+  "date": "2026-10-18",
+  "environment": "Production build; isolated synthetic workspace at port 3003",
+  "workflows": [
+    {
+      "case": "Invalid password feedback and retry retains teacher account on admin entry",
+      "passed": true
+    },
+    {
+      "case": "Attendance date change clears previous-day unsaved marks",
+      "passed": true
+    },
+    {
+      "case": "Teacher leave retains chosen dates after editing reason",
+      "passed": true
+    },
+    {
+      "case": "Leave and attendance saved across refresh",
+      "passed": true
+    },
+    {
+      "case": "Teacher creates assigned-class homework with selected due date",
+      "passed": true
+    },
+    {
+      "case": "Signed-out teacher deep link redirects to login",
+      "passed": true
+    },
+    {
+      "case": "Student answer minimum length shows validation",
+      "passed": true
+    },
+    {
+      "case": "Student answer submitted to teacher-created homework",
+      "passed": true
+    },
+    {
+      "case": "Student cannot open administrator dashboard",
+      "passed": true
+    },
+    {
+      "case": "Staff submits own claim with chosen date and cannot self-approve/edit submitted claim",
+      "passed": true
+    },
+    {
+      "case": "Parent sees linked child attendance saved by teacher",
+      "passed": true
+    },
+    {
+      "case": "Parent document request has no self-approval or unsupported cancel button",
+      "passed": true
+    },
+    {
+      "case": "Administrator receives and approves staff-submitted claim",
+      "passed": true
+    },
+    {
+      "case": "Teacher reviews submitted answer from page two and saves feedback",
+      "passed": true
+    },
+    {
+      "case": "Teacher sees admin leave decision",
+      "passed": true
+    },
+    {
+      "case": "Parent sees teacher feedback and graded 9/10 assignment",
+      "passed": true
+    },
+    {
+      "case": "Issued document status returns to parent without edit or approval controls",
+      "passed": true
+    },
+    {
+      "case": "Parent sees school approval and decision note",
+      "passed": true
+    },
+    {
+      "case": "Approved parent leave creates excused child attendance",
+      "passed": true
+    },
+    {
+      "case": "Staff sees admin-approved claim and cannot change it",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot open administrator dashboard",
+      "passed": true
+    },
+    {
+      "case": "Final build creates assigned lesson and submits it with chosen date",
+      "passed": true
+    },
+    {
+      "case": "Cancel invalid submission closes editor without saving",
+      "passed": true
+    },
+    {
+      "case": "Student retains graded score and feedback after reload",
+      "passed": true
+    },
+    {
+      "case": "Switching role entry via client navigation seeds the correct account",
+      "passed": true
+    },
+    {
+      "case": "School-approved lesson returns to teacher and cannot be resubmitted",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot open administrator finance pages",
+      "passed": true
+    },
+    {
+      "case": "Staff cannot open account administration",
+      "passed": true
+    }
+  ],
+  "adminRoutes": [
+    {
+      "path": "/dashboard",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/dashboard/approvals",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/dashboard/calendar",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/dashboard/calendar/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/audit",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/inquiries",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/inquiries/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/public-form",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/form-builder",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/applications",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/assessments",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/seats",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/offers",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/reenrolment",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/admissions/analytics",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/profile",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/guardians",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/import",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/promotions",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/id-cards",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/certificates",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/merge",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/students/transport",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/staff",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/staff/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/staff/profile",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/staff/roles",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/staff/allocations",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/staff/documentation",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/attendance",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/attendance/periods",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/attendance/leave",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/attendance/staff",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/timetable",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/timetable/builder",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/timetable/substitutions",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics/subjects",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics/syllabus",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics/lessons",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics/lessons/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics/homework/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/academics/submissions",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/exams",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/exams/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/exams/marks",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/fees",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/fees/invoices",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/fees/collect",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/communication",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/communication/new",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/reports",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/settings",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/settings/year-end",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/profile",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/notifications",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "path": "/support",
+      "rendered": true,
+      "alerts": []
+    }
+  ],
+  "portalRoutes": [
+    {
+      "url": "http://127.0.0.1:3003/student",
+      "heading": "Welcome, Aarav",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/timetable",
+      "heading": "Timetable",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/homework",
+      "heading": "Homework",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/results",
+      "heading": "Results",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/fees",
+      "heading": "Fees",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/notices",
+      "heading": "Notices",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/library",
+      "heading": "Library",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/activities",
+      "heading": "Activities",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/requests",
+      "heading": "Requests",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/learning",
+      "heading": "Learning",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/student/profile",
+      "heading": "Profile",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher",
+      "heading": "Welcome, Anita",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/classes",
+      "heading": "Classes",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/timetable",
+      "heading": "Timetable",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/homework",
+      "heading": "Homework",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/submissions",
+      "heading": "Submissions",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/lessons",
+      "heading": "Lessons",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/marks",
+      "heading": "Marks",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/resources",
+      "heading": "Resources",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/messages",
+      "heading": "Messages",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/leave",
+      "heading": "Leave",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/teacher/profile",
+      "heading": "Profile",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent",
+      "heading": "Welcome, Aarav’s",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/timetable",
+      "heading": "Timetable",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/homework",
+      "heading": "Homework",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/results",
+      "heading": "Results",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/fees",
+      "heading": "Fees",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/messages",
+      "heading": "Messages",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/notices",
+      "heading": "Notices",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/leave",
+      "heading": "Leave",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/transport",
+      "heading": "Transport",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/events",
+      "heading": "Events",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/ptm",
+      "heading": "Ptm",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/consents",
+      "heading": "Consents",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/documents",
+      "heading": "Documents",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/parent/profile",
+      "heading": "Profile",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal",
+      "heading": "Welcome, Rahul",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/attendance",
+      "heading": "Attendance",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/leave",
+      "heading": "Leave",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/documents",
+      "heading": "Documents",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/payroll",
+      "heading": "Payroll",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/expenses",
+      "heading": "Expenses",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/training",
+      "heading": "Training",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/messages",
+      "heading": "Messages",
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:3003/staff-portal/profile",
+      "heading": "Profile",
+      "errors": []
+    }
+  ],
+  "summary": {
+    "workflowCases": 28,
+    "failedWorkflows": 0,
+    "adminPages": 60,
+    "portalPages": 48,
+    "automatedTests": 73,
+    "typecheck": "passed",
+    "build": "passed",
+    "controlBindings": {
+      "controls": 354,
+      "unexplained": 0,
+      "intentionallyDisabled": 1
+    }
+  },
+  "scope": "Route smoke checks plus the named workflow scenarios; not exhaustive testing of every button and record combination. Earlier operational collection coverage is recorded in role-workspaces-browser-audit.json.",
+  "limitations": [
+    "Synthetic browser-local school records; live Supabase policies not configured.",
+    "Real payments, external delivery and provider integrations remain disconnected.",
+    "Credential-change completion covered by isolated adapter tests.",
+    "Exact Figma parity remains unverified."
+  ],
+  "screenshot": "screenshots/five-role-student-feedback.png"
+}

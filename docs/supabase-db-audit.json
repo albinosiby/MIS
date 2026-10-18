@@ -1,0 +1,84 @@
+{
+  "project": "fxtlcapsytqyzsgcbcvp",
+  "date": "2026-10-18T05:54:27.326914+00:00",
+  "appliedMigrations": [
+    "20261018051237_school_cloud_foundation.sql",
+    "20261018051615_restrict_default_rls_trigger_execute.sql",
+    "20261018052033_membership_invitation_and_admin_guards.sql",
+    "20261018052310_service_session_lookup_columns.sql",
+    "20261018053108_membership_privilege_boundaries.sql",
+    "20261018053525_public_intake_repository.sql",
+    "20261018054148_workspace_conflict_http_status.sql"
+  ],
+  "verification": {
+    "anon_public_intake_rpc": false,
+    "anon_read_rpc": false,
+    "auth_commit_rpc": false,
+    "auth_users": 5,
+    "memberships": [
+      {
+        "active": true,
+        "role": "admin"
+      },
+      {
+        "active": true,
+        "role": "teacher"
+      },
+      {
+        "active": true,
+        "role": "staff"
+      },
+      {
+        "active": true,
+        "role": "parent"
+      },
+      {
+        "active": true,
+        "role": "student"
+      }
+    ],
+    "rls_disabled": 0,
+    "tables": 11,
+    "workspace": {
+      "revision": 39,
+      "setup_steps": 8,
+      "students": 101
+    }
+  },
+  "advisors": [
+    {
+      "name": "auth_leaked_password_protection",
+      "title": "Leaked Password Protection Disabled",
+      "level": "WARN",
+      "facing": "EXTERNAL",
+      "categories": [
+        "SECURITY"
+      ],
+      "description": "Leaked password protection is currently disabled.",
+      "detail": "Supabase Auth prevents the use of compromised passwords by checking against HaveIBeenPwned.org. Enable this feature to enhance security.",
+      "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection",
+      "metadata": {
+        "entity": "Auth",
+        "type": "auth"
+      },
+      "cacheKey": "auth_leaked_password_protection"
+    }
+  ],
+  "automatedTests": 87,
+  "liveIntegrationChecks": 55,
+  "browserChecks": 17,
+  "typecheck": "passed",
+  "build": "passed",
+  "cloudAuthAccountsCreated": true,
+  "cloudModeEnabled": true,
+  "uiControls": 356,
+  "unboundControls": 0,
+  "limitations": [
+    "Payment gateway and external notification delivery remain simulated",
+    "Recovery/invitation email delivery and password changes not exercised",
+    "Binary attachments store metadata only",
+    "Private workflow document repository remains a transitional persistence layer",
+    "Leaked password protection is disabled in Supabase Auth"
+  ],
+  "subsequentAudit": "production-readiness-verification.json"
+}

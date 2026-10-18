@@ -1,0 +1,198 @@
+import type { ModuleDefinition } from "../../operations/models/definitions.ts";
+export const forms: ModuleDefinition[] = [
+  {
+    kind: "purchase-receipts",
+    area: "inventory",
+    title: "Purchase receipts",
+    description:
+      "Receive complete or partial deliveries against approved orders. Stock and payable journals post together.",
+    states: ["draft", "posted"],
+    fields: [
+      {
+        name: "purchaseOrderId",
+        label: "Purchase order",
+        type: "text",
+        relation: "purchase-orders",
+        required: true,
+      },
+      {
+        name: "quantity",
+        label: "Received quantity",
+        type: "number",
+        min: 1,
+        max: 100000000,
+        required: true,
+      },
+      {
+        name: "deliveryReference",
+        label: "Delivery note reference",
+        type: "text",
+        required: true,
+      },
+    ],
+  },
+  {
+    kind: "vendors",
+    area: "inventory",
+    title: "Vendors",
+    description: "Maintain supplier contact and purchasing information.",
+    fields: [
+      {
+        name: "contact",
+        label: "Contact name",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "email",
+        label: "Business email",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "address",
+        label: "Address",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["active", "inactive"],
+  },
+  {
+    kind: "items",
+    area: "inventory",
+    title: "Items & stock",
+    description:
+      "Define items; on-hand stock is derived from posted movements.",
+    fields: [
+      {
+        name: "sku",
+        label: "Stock code",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "unit",
+        label: "Unit",
+        type: "select",
+        required: true,
+        options: ["Each", "Box", "Pack", "Litre", "Kg"],
+      },
+      {
+        name: "reorderLevel",
+        label: "Reorder level",
+        type: "number",
+        required: true,
+        min: 0,
+        max: 100000000,
+      },
+    ],
+    states: ["active", "archived"],
+  },
+  {
+    kind: "purchase-orders",
+    area: "inventory",
+    title: "Purchase orders",
+    description: "Request and approve purchasing from a registered vendor.",
+    fields: [
+      {
+        name: "vendorId",
+        label: "Vendor",
+        type: "text",
+        required: true,
+        relation: "vendors",
+      },
+      {
+        name: "itemId",
+        label: "Item",
+        type: "text",
+        required: true,
+        relation: "items",
+      },
+      {
+        name: "quantity",
+        label: "Quantity",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "amountMinor",
+        label: "Order value in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "received"],
+  },
+  {
+    kind: "stock-movements",
+    area: "inventory",
+    title: "Stock movements",
+    description:
+      "Post receipts, departmental issues or returns with an audit trail.",
+    fields: [
+      {
+        name: "itemId",
+        label: "Item",
+        type: "text",
+        required: true,
+        relation: "items",
+      },
+      {
+        name: "direction",
+        label: "Direction",
+        type: "select",
+        required: true,
+        options: ["Receipt", "Issue", "Return"],
+      },
+      {
+        name: "quantity",
+        label: "Quantity",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "department",
+        label: "Department / source",
+        type: "text",
+        required: true,
+      },
+    ],
+    states: ["draft", "posted"],
+  },
+  {
+    kind: "assets",
+    area: "inventory",
+    title: "Asset register",
+    description: "Track school-owned assets and maintenance status.",
+    fields: [
+      {
+        name: "assetTag",
+        label: "Asset tag",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "department",
+        label: "Department",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "costMinor",
+        label: "Acquisition cost in minor units",
+        type: "number",
+        required: true,
+        min: 0,
+        max: 100000000,
+      },
+    ],
+    states: ["active", "maintenance", "retired"],
+  },
+];

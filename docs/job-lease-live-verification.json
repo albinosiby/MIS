@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-10-18T09:26:27.517Z",
+  "passed": 24,
+  "total": 24,
+  "checks": [
+    {
+      "case": "Existing admin/staff memberships available",
+      "passed": true
+    },
+    {
+      "case": "Create two isolated synthetic jobs",
+      "passed": true
+    },
+    {
+      "case": "Claim RPC succeeds",
+      "passed": true
+    },
+    {
+      "case": "Claim RPC succeeds",
+      "passed": true
+    },
+    {
+      "case": "Concurrent claims never share a lease/job",
+      "passed": true
+    },
+    {
+      "case": "Wrong lease token is rejected",
+      "passed": true
+    },
+    {
+      "case": "Expire only the synthetic lease",
+      "passed": true
+    },
+    {
+      "case": "Expired lease cannot finish",
+      "passed": true
+    },
+    {
+      "case": "Claim RPC succeeds",
+      "passed": true
+    },
+    {
+      "case": "Expired lease is reclaimed with a fresh token",
+      "passed": true
+    },
+    {
+      "case": "Lease expiry leaves an audit attempt",
+      "passed": true
+    },
+    {
+      "case": "Transient failure schedules retry",
+      "passed": true
+    },
+    {
+      "case": "Retry has bounded exponential backoff",
+      "passed": true
+    },
+    {
+      "case": "Claim RPC succeeds",
+      "passed": true
+    },
+    {
+      "case": "Final retry finishes safely",
+      "passed": true
+    },
+    {
+      "case": "Maximum retries reach failed state",
+      "passed": true
+    },
+    {
+      "case": "Staff cannot control administrator jobs",
+      "passed": true
+    },
+    {
+      "case": "Foreign school control is rejected",
+      "passed": true
+    },
+    {
+      "case": "Admin can restart an exhausted job",
+      "passed": true
+    },
+    {
+      "case": "Claim RPC succeeds",
+      "passed": true
+    },
+    {
+      "case": "Manual retry uses a new lease cycle",
+      "passed": true
+    },
+    {
+      "case": "Manual retry preserves previous attempts",
+      "passed": true
+    },
+    {
+      "case": "Cancelled work cannot be silently restarted",
+      "passed": true
+    },
+    {
+      "case": "Anonymous caller cannot invoke job controls",
+      "passed": true
+    }
+  ]
+}

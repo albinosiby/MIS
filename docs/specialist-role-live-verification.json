@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-18T07:02:53.151Z",
+  "checks": [
+    {
+      "role": "principal",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "accountant",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "librarian",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "hr",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "nurse",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "counsellor",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "transport",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "driver",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "inventory",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    },
+    {
+      "role": "warden",
+      "academicFileBoundary": true,
+      "permittedHome": true,
+      "forbiddenPage": true,
+      "privateFiles": true
+    }
+  ],
+  "membershipRestored": true,
+  "accountsCreated": 0,
+  "passwordsChanged": 0,
+  "limits": "HTTP home/access denial, permitted file list and academic binary download boundary; module business side effects have domain tests and remain subject to workflow completion."
+}

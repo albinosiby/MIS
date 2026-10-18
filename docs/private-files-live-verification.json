@@ -1,0 +1,314 @@
+{
+  "checkedAt": "2026-10-18T10:04:31.608Z",
+  "checks": [
+    {
+      "case": "Read preserved canonical workspace",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: admin",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: principal",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: teacher",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: staff",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: accountant",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: parent",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: student",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: driver",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: librarian",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: hr",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: nurse",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: counsellor",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: transport",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: inventory",
+      "passed": true
+    },
+    {
+      "case": "Validated live-data projection: warden",
+      "passed": true
+    },
+    {
+      "case": "Existing admin login",
+      "passed": true
+    },
+    {
+      "case": "admin own membership",
+      "passed": true
+    },
+    {
+      "case": "admin direct metadata denied",
+      "passed": true
+    },
+    {
+      "case": "admin direct lifecycle denied",
+      "passed": true
+    },
+    {
+      "case": "admin HTTP file list",
+      "passed": true
+    },
+    {
+      "case": "Existing teacher login",
+      "passed": true
+    },
+    {
+      "case": "teacher own membership",
+      "passed": true
+    },
+    {
+      "case": "teacher direct metadata denied",
+      "passed": true
+    },
+    {
+      "case": "teacher direct lifecycle denied",
+      "passed": true
+    },
+    {
+      "case": "teacher HTTP file list",
+      "passed": true
+    },
+    {
+      "case": "Existing staff login",
+      "passed": true
+    },
+    {
+      "case": "staff own membership",
+      "passed": true
+    },
+    {
+      "case": "staff direct metadata denied",
+      "passed": true
+    },
+    {
+      "case": "staff direct lifecycle denied",
+      "passed": true
+    },
+    {
+      "case": "staff HTTP file list",
+      "passed": true
+    },
+    {
+      "case": "Existing parent login",
+      "passed": true
+    },
+    {
+      "case": "parent own membership",
+      "passed": true
+    },
+    {
+      "case": "parent direct metadata denied",
+      "passed": true
+    },
+    {
+      "case": "parent direct lifecycle denied",
+      "passed": true
+    },
+    {
+      "case": "parent HTTP file list",
+      "passed": true
+    },
+    {
+      "case": "Existing student login",
+      "passed": true
+    },
+    {
+      "case": "student own membership",
+      "passed": true
+    },
+    {
+      "case": "student direct metadata denied",
+      "passed": true
+    },
+    {
+      "case": "student direct lifecycle denied",
+      "passed": true
+    },
+    {
+      "case": "student HTTP file list",
+      "passed": true
+    },
+    {
+      "case": "Signed-out list denied",
+      "passed": true
+    },
+    {
+      "case": "Signed-out upload denied",
+      "passed": true
+    },
+    {
+      "case": "Invalid file bytes rejected",
+      "passed": true
+    },
+    {
+      "case": "Student cannot upload another staff employment file",
+      "passed": true
+    },
+    {
+      "case": "Admin uploads private binary",
+      "passed": true
+    },
+    {
+      "case": "Upload response withholds storage path and actor",
+      "passed": true
+    },
+    {
+      "case": "Permitted parent downloads persisted bytes",
+      "passed": true
+    },
+    {
+      "case": "Downloads use attachment and no-store headers",
+      "passed": true
+    },
+    {
+      "case": "Unrelated staff download denied",
+      "passed": true
+    },
+    {
+      "case": "Anonymous direct Storage denied",
+      "passed": true
+    },
+    {
+      "case": "Authenticated direct Storage denied",
+      "passed": true
+    },
+    {
+      "case": "Bucket is private and bounded",
+      "passed": true
+    },
+    {
+      "case": "Linked student cannot replace an administrator-authored file",
+      "passed": true
+    },
+    {
+      "case": "Version replacement upload",
+      "passed": true
+    },
+    {
+      "case": "Replacement increments immutable version",
+      "passed": true
+    },
+    {
+      "case": "Superseded version download denied",
+      "passed": true
+    },
+    {
+      "case": "New version downloadable",
+      "passed": true
+    },
+    {
+      "case": "Wrong-origin mutation denied",
+      "passed": true
+    },
+    {
+      "case": "Unrelated staff revoke denied",
+      "passed": true
+    },
+    {
+      "case": "Admin revoke",
+      "passed": true
+    },
+    {
+      "case": "Revocation immediately blocks parent bytes",
+      "passed": true
+    },
+    {
+      "case": "Retention prevents early purge",
+      "passed": true
+    },
+    {
+      "case": "Reserve interrupted upload",
+      "passed": true
+    },
+    {
+      "case": "Pending bytes cannot be downloaded",
+      "passed": true
+    },
+    {
+      "case": "Persist interrupted upload bytes",
+      "passed": true
+    },
+    {
+      "case": "Other account cannot resume upload",
+      "passed": true
+    },
+    {
+      "case": "Uploader recovers interrupted upload",
+      "passed": true
+    },
+    {
+      "case": "Recovered bytes available to permitted parent",
+      "passed": true
+    },
+    {
+      "case": "Recovered test file revoked",
+      "passed": true
+    },
+    {
+      "case": "Reserve interrupted upload",
+      "passed": true
+    },
+    {
+      "case": "Uploader cancels missing-content upload",
+      "passed": true
+    },
+    {
+      "case": "Expired cancelled upload can be purged",
+      "passed": true
+    },
+    {
+      "case": "Cancelled upload remains unavailable",
+      "passed": true
+    },
+    {
+      "case": "Upload/download/revoke audit persisted",
+      "passed": true
+    }
+  ],
+  "accountsCreated": 0,
+  "passwordsChanged": 0,
+  "canonicalWorkspaceChanged": false,
+  "retainedVerificationFiles": [
+    "e06ef954-d62f-40b1-a41a-dda4c8adf2a8",
+    "42e89a29-5357-4249-b88a-2b30aef960b6",
+    "d1d48e8d-1948-49a1-8d83-95aeed101363"
+  ],
+  "limit": "Five original cloud identities plus all-role domain projections. Specialist role HTTP checks are recorded separately; business workflow completion and deployment operations remain separate milestones."
+}

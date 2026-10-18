@@ -1,0 +1,11 @@
+import type { z } from "zod";
+import type { incidentsRequestSchema } from "../schemas/operations.schema.ts";
+export type IncidentsRequest = z.infer<typeof incidentsRequestSchema>;
+import type { housePointsRequestSchema } from "../schemas/operations.schema.ts";
+export type HousePointsRequest = z.infer<typeof housePointsRequestSchema>;
+import type { counsellingRequestSchema } from "../schemas/operations.schema.ts";
+export type CounsellingRequest = z.infer<typeof counsellingRequestSchema>;
+import type { iepRequestSchema } from "../schemas/operations.schema.ts";
+export type IepRequest = z.infer<typeof iepRequestSchema>;
+import type { safeguardingRequestSchema } from "../schemas/operations.schema.ts";
+export type SafeguardingRequest = z.infer<typeof safeguardingRequestSchema>;

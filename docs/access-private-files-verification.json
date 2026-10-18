@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-18T07:04:42.123076+00:00",
+  "automatedTestsPassed": 94,
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "specialistRolesVerified": 10,
+  "specialistBoundaryChecks": 40,
+  "staffMembershipRestoredExactly": true,
+  "livePrivateFileChecks": 75,
+  "authAccountsCreated": 0,
+  "passwordsChanged": 0,
+  "canonicalSchoolDocumentChanged": false,
+  "browserChecks": {
+    "privateRegisterRendered": true,
+    "browserFileUploadPersisted": true,
+    "restoredStaffLogin": true,
+    "staffPrivateFileListScoped": true,
+    "staffAdminPageDenied": true,
+    "productionServerRunningOnPort": 3000
+  },
+  "advisors": {
+    "errors": 0,
+    "warnings": [
+      "Leaked password protection disabled"
+    ]
+  },
+  "limits": [
+    "Specialist HTTP access and binary permission boundaries plus all-role domain tests are not exhaustive business workflow tests.",
+    "Production malware scanning, storage backup/restore and multi-school tenancy remain pending."
+  ],
+  "staticControlAudit": {
+    "controls": 363,
+    "unexplainedUnboundControls": 0
+  }
+}

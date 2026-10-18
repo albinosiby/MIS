@@ -1,0 +1,218 @@
+import type { ModuleDefinition } from "../../operations/models/definitions.ts";
+export const forms: ModuleDefinition[] = [
+  {
+    kind: "contracts",
+    area: "hr",
+    title: "Staff contracts",
+    description:
+      "Maintain employment agreement metadata; signing is outside this.",
+    fields: [
+      {
+        name: "designation",
+        label: "Designation",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "startDate",
+        label: "Start date",
+        type: "date",
+        required: true,
+      },
+      {
+        name: "endDate",
+        label: "End date",
+        type: "date",
+        required: true,
+      },
+      {
+        name: "terms",
+        label: "Terms summary",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "completed"],
+    staff: true,
+  },
+  {
+    kind: "payroll",
+    area: "hr",
+    title: "Payroll runs",
+    description:
+      "Review gross pay and deductions; tax packs and bank payouts are not connected.",
+    fields: [
+      {
+        name: "period",
+        label: "Payroll period",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "grossMinor",
+        label: "Gross pay in minor units",
+        type: "number",
+        required: true,
+        min: 0,
+        max: 100000000,
+      },
+      {
+        name: "deductionMinor",
+        label: "Deductions in minor units",
+        type: "number",
+        required: true,
+        min: 0,
+        max: 100000000,
+      },
+    ],
+    states: ["draft", "reviewed", "approved", "finalised"],
+    staff: true,
+  },
+  {
+    kind: "expenses",
+    area: "hr",
+    title: "Expense claims",
+    description: "Submit and review staff expense reimbursements.",
+    fields: [
+      {
+        name: "category",
+        label: "Category",
+        type: "select",
+        required: true,
+        options: ["Travel", "Supplies", "Training", "Other"],
+      },
+      {
+        name: "amountMinor",
+        label: "Amount in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "reason",
+        label: "Description",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "completed"],
+    staff: true,
+  },
+  {
+    kind: "appraisals",
+    area: "hr",
+    title: "Staff appraisals",
+    description: "Review objectives, evidence and development goals.",
+    fields: [
+      {
+        name: "objectives",
+        label: "Objectives",
+        type: "textarea",
+        required: true,
+      },
+      {
+        name: "rating",
+        label: "Rating",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 5,
+      },
+      {
+        name: "feedback",
+        label: "Feedback",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "completed"],
+    staff: true,
+  },
+  {
+    kind: "training",
+    area: "hr",
+    title: "Training records",
+    description: "Track staff development and completion.",
+    fields: [
+      {
+        name: "provider",
+        label: "Training provider",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "hours",
+        label: "Hours",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 300,
+      },
+      {
+        name: "outcome",
+        label: "Learning outcome",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "completed"],
+    staff: true,
+  },
+  {
+    kind: "vacancies",
+    area: "hr",
+    title: "Recruitment vacancies",
+    description: "Prepare and publish a vacancy, then close recruitment.",
+    fields: [
+      {
+        name: "department",
+        label: "Department",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "description",
+        label: "Job description",
+        type: "textarea",
+        required: true,
+      },
+      {
+        name: "closingDate",
+        label: "Closing date",
+        type: "date",
+        required: true,
+      },
+    ],
+    states: ["draft", "open", "closed"],
+  },
+  {
+    kind: "applicants",
+    area: "hr",
+    title: "Recruitment applicants",
+    description:
+      "Track synthetic applicants through a reviewed hiring pipeline.",
+    fields: [
+      {
+        name: "vacancyId",
+        label: "Vacancy",
+        type: "text",
+        required: true,
+        relation: "vacancies",
+      },
+      {
+        name: "email",
+        label: "Email address",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "experience",
+        label: "Experience summary",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["applied", "shortlisted", "interviewed", "offered", "hired"],
+  },
+];

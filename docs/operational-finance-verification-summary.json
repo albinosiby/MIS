@@ -1,0 +1,31 @@
+{
+  "automatedTests": 156,
+  "liveWorkflowChecks": 126,
+  "workerRuntimeChecks": 6,
+  "productionBuild": "passed",
+  "typecheck": "passed",
+  "uiBindingAudit": {
+    "controls": 477,
+    "unresolved": 0
+  },
+  "browserAcceptance": [
+    "saved stock receipt",
+    "posted stock receipt",
+    "full reload retains posted record",
+    "saved bank match/correction audit visible",
+    "importer cannot close own statement"
+  ],
+  "screenshots": [
+    "docs/screenshots/operational-stock-persisted.png",
+    "docs/screenshots/bank-reconciliation-audit.png"
+  ],
+  "liveLimitations": [
+    "Independent authenticated bank closure requires a second finance login; successful closure is covered through the cloud-command/domain boundary."
+  ],
+  "remainingAdvancedWork": [
+    "Vendor returns with linked approved financial corrections",
+    "Multiple bank subledgers",
+    "Policy-driven fine automation",
+    "External bank feeds, payment gateway and hardware integrations"
+  ]
+}

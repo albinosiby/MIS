@@ -1,0 +1,56 @@
+.school-dialog {
+  margin: auto;
+  max-width: min(580px, calc(100vw - 32px));
+  max-height: calc(100dvh - 48px);
+  width: 100%;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--foreground);
+  background: var(--card);
+  box-shadow: 0 20px 60px #0f172a33;
+}
+.school-dialog::backdrop {
+  background: #0f172a66;
+  backdrop-filter: blur(2px);
+}
+.school-dialog > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--border);
+}
+.school-dialog h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.school-dialog-body {
+  padding: 22px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.school-dialog-body p {
+  margin-bottom: 16px;
+}
+.school-dialog-body label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.school-dialog-body textarea {
+  display: block;
+  width: 100%;
+  min-height: 110px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.school-dialog-body .dialog-hint {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}

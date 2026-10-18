@@ -1,0 +1,1199 @@
+{
+  "workspaceRoutes": [
+    "/dashboard",
+    "/dashboard/approvals",
+    "/dashboard/calendar",
+    "/dashboard/calendar/new",
+    "/audit",
+    "/admissions",
+    "/admissions/inquiries",
+    "/admissions/inquiries/new",
+    "/admissions/public-form",
+    "/admissions/form-builder",
+    "/admissions/applications",
+    "/admissions/assessments",
+    "/admissions/seats",
+    "/admissions/offers",
+    "/admissions/reenrolment",
+    "/admissions/analytics",
+    "/students",
+    "/students/new",
+    "/students/profile",
+    "/students/guardians",
+    "/students/import",
+    "/students/promotions",
+    "/students/id-cards",
+    "/students/certificates",
+    "/students/merge",
+    "/students/transport",
+    "/staff",
+    "/staff/new",
+    "/staff/profile",
+    "/staff/roles",
+    "/staff/allocations",
+    "/staff/documentation",
+    "/attendance",
+    "/attendance/periods",
+    "/attendance/leave",
+    "/attendance/staff",
+    "/timetable",
+    "/timetable/builder",
+    "/timetable/substitutions",
+    "/academics",
+    "/academics/subjects",
+    "/academics/syllabus",
+    "/academics/lessons",
+    "/academics/lessons/new",
+    "/academics/homework/new",
+    "/academics/submissions",
+    "/exams",
+    "/exams/new",
+    "/exams/marks",
+    "/fees",
+    "/fees/invoices",
+    "/fees/collect",
+    "/communication",
+    "/communication/new",
+    "/reports",
+    "/settings",
+    "/settings/year-end",
+    "/profile",
+    "/notifications",
+    "/support",
+    "/hr",
+    "/transport",
+    "/library",
+    "/inventory",
+    "/hostel",
+    "/wellbeing",
+    "/health",
+    "/activities",
+    "/documents",
+    "/learning",
+    "/front-office",
+    "/website",
+    "/platform",
+    "/group",
+    "/alumni",
+    "/fees/payment-attempts",
+    "/fees/refunds",
+    "/fees/reconciliation",
+    "/fees/journals",
+    "/fees/payment-plans",
+    "/fees/receipt-templates",
+    "/fees/gateways",
+    "/exams/grading-scales",
+    "/exams/report-templates",
+    "/exams/moderation",
+    "/exams/seating",
+    "/exams/re-evaluations",
+    "/communication/message-templates",
+    "/communication/messages",
+    "/communication/deliveries",
+    "/communication/ptm",
+    "/communication/surveys",
+    "/communication/consents",
+    "/hr/contracts",
+    "/hr/payroll",
+    "/hr/expenses",
+    "/hr/appraisals",
+    "/hr/training",
+    "/hr/vacancies",
+    "/hr/applicants",
+    "/transport/vehicles",
+    "/transport/stops",
+    "/transport/drivers",
+    "/transport/trips",
+    "/transport/boarding",
+    "/transport/vehicle-maintenance",
+    "/transport/transport-alerts",
+    "/library/books",
+    "/library/copies",
+    "/library/loans",
+    "/library/reservations",
+    "/library/library-fines",
+    "/inventory/vendors",
+    "/inventory/items",
+    "/inventory/purchase-orders",
+    "/inventory/stock-movements",
+    "/inventory/assets",
+    "/hostel/beds",
+    "/hostel/hostel-allocations",
+    "/hostel/roll-call",
+    "/hostel/outpasses",
+    "/hostel/hostel-visitors",
+    "/hostel/mess",
+    "/wellbeing/incidents",
+    "/wellbeing/house-points",
+    "/wellbeing/counselling",
+    "/wellbeing/iep",
+    "/wellbeing/safeguarding",
+    "/health/clinic",
+    "/health/medication",
+    "/health/immunisations",
+    "/activities/clubs",
+    "/activities/activity-enrolments",
+    "/activities/trips-events",
+    "/activities/achievements",
+    "/documents/document-requests",
+    "/documents/document-register",
+    "/documents/certificate-templates",
+    "/learning/resources",
+    "/learning/live-classes",
+    "/learning/quizzes",
+    "/learning/quiz-attempts",
+    "/front-office/visitors",
+    "/front-office/gate-passes",
+    "/front-office/appointments",
+    "/reports/saved-reports",
+    "/reports/statutory",
+    "/settings/integrations",
+    "/settings/webhooks",
+    "/settings/modules",
+    "/settings/billing",
+    "/website/cms-pages",
+    "/website/cms-news",
+    "/website/domains",
+    "/platform/support-tickets",
+    "/platform/tenant-requests",
+    "/platform/plans",
+    "/platform/support-grants",
+    "/group/group-policies",
+    "/alumni/alumni",
+    "/teacher",
+    "/teacher/classes",
+    "/teacher/attendance",
+    "/teacher/timetable",
+    "/teacher/homework",
+    "/teacher/submissions",
+    "/teacher/lessons",
+    "/teacher/marks",
+    "/teacher/resources",
+    "/teacher/messages",
+    "/teacher/leave",
+    "/teacher/profile",
+    "/parent",
+    "/parent/attendance",
+    "/parent/timetable",
+    "/parent/homework",
+    "/parent/results",
+    "/parent/fees",
+    "/parent/messages",
+    "/parent/notices",
+    "/parent/leave",
+    "/parent/transport",
+    "/parent/events",
+    "/parent/ptm",
+    "/parent/consents",
+    "/parent/documents",
+    "/parent/profile",
+    "/student",
+    "/student/attendance",
+    "/student/timetable",
+    "/student/homework",
+    "/student/results",
+    "/student/fees",
+    "/student/notices",
+    "/student/library",
+    "/student/activities",
+    "/student/requests",
+    "/student/learning",
+    "/student/profile",
+    "/staff-portal",
+    "/staff-portal/attendance",
+    "/staff-portal/leave",
+    "/staff-portal/documents",
+    "/staff-portal/payroll",
+    "/staff-portal/expenses",
+    "/staff-portal/training",
+    "/staff-portal/messages",
+    "/staff-portal/profile",
+    "/driver",
+    "/driver/trips",
+    "/driver/boarding",
+    "/driver/vehicles",
+    "/driver/alerts",
+    "/driver/profile",
+    "/workspace",
+    "/settings/users",
+    "/settings/invitations",
+    "/account/security",
+    "/account/sessions",
+    "/select-role",
+    "/select-school",
+    "/school-setup"
+  ],
+  "operationalDefinitions": [
+    {
+      "kind": "payment-attempts",
+      "area": "fees",
+      "title": "Online payment attempts",
+      "route": "/fees/payment-attempts",
+      "states": [
+        "pending",
+        "simulated-success",
+        "failed"
+      ]
+    },
+    {
+      "kind": "refunds",
+      "area": "fees",
+      "title": "Refund requests",
+      "route": "/fees/refunds",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "reconciliation",
+      "area": "fees",
+      "title": "Bank reconciliation",
+      "route": "/fees/reconciliation",
+      "states": [
+        "unmatched",
+        "matched",
+        "reconciled"
+      ]
+    },
+    {
+      "kind": "journals",
+      "area": "fees",
+      "title": "Day-book & journal",
+      "route": "/fees/journals",
+      "states": [
+        "draft",
+        "posted"
+      ]
+    },
+    {
+      "kind": "payment-plans",
+      "area": "fees",
+      "title": "Payment plans",
+      "route": "/fees/payment-plans",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "receipt-templates",
+      "area": "fees",
+      "title": "Receipt templates",
+      "route": "/fees/receipt-templates",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "gateways",
+      "area": "fees",
+      "title": "Payment gateway settings",
+      "route": "/fees/gateways",
+      "states": [
+        "unconfigured"
+      ]
+    },
+    {
+      "kind": "grading-scales",
+      "area": "exams",
+      "title": "Grading scales",
+      "route": "/exams/grading-scales",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "report-templates",
+      "area": "exams",
+      "title": "Report-card templates",
+      "route": "/exams/report-templates",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "moderation",
+      "area": "exams",
+      "title": "Marks moderation",
+      "route": "/exams/moderation",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "seating",
+      "area": "exams",
+      "title": "Exam seating",
+      "route": "/exams/seating",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "re-evaluations",
+      "area": "exams",
+      "title": "Re-evaluation requests",
+      "route": "/exams/re-evaluations",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "message-templates",
+      "area": "communication",
+      "title": "Message templates",
+      "route": "/communication/message-templates",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "messages",
+      "area": "communication",
+      "title": "Messages",
+      "route": "/communication/messages",
+      "states": [
+        "sent",
+        "read"
+      ]
+    },
+    {
+      "kind": "deliveries",
+      "area": "communication",
+      "title": "Delivery log",
+      "route": "/communication/deliveries",
+      "states": [
+        "queued",
+        "simulated-delivery",
+        "failed"
+      ]
+    },
+    {
+      "kind": "ptm",
+      "area": "communication",
+      "title": "Parent–teacher meetings",
+      "route": "/communication/ptm",
+      "states": [
+        "available",
+        "booked",
+        "completed"
+      ]
+    },
+    {
+      "kind": "surveys",
+      "area": "communication",
+      "title": "Surveys & polls",
+      "route": "/communication/surveys",
+      "states": [
+        "draft",
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "kind": "consents",
+      "area": "communication",
+      "title": "Consent requests",
+      "route": "/communication/consents",
+      "states": [
+        "requested",
+        "responded"
+      ]
+    },
+    {
+      "kind": "contracts",
+      "area": "hr",
+      "title": "Staff contracts",
+      "route": "/hr/contracts",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "payroll",
+      "area": "hr",
+      "title": "Payroll runs",
+      "route": "/hr/payroll",
+      "states": [
+        "draft",
+        "reviewed",
+        "approved",
+        "finalised"
+      ]
+    },
+    {
+      "kind": "expenses",
+      "area": "hr",
+      "title": "Expense claims",
+      "route": "/hr/expenses",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "appraisals",
+      "area": "hr",
+      "title": "Staff appraisals",
+      "route": "/hr/appraisals",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "training",
+      "area": "hr",
+      "title": "Training records",
+      "route": "/hr/training",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "vacancies",
+      "area": "hr",
+      "title": "Recruitment vacancies",
+      "route": "/hr/vacancies",
+      "states": [
+        "draft",
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "kind": "applicants",
+      "area": "hr",
+      "title": "Recruitment applicants",
+      "route": "/hr/applicants",
+      "states": [
+        "applied",
+        "shortlisted",
+        "interviewed",
+        "offered",
+        "hired"
+      ]
+    },
+    {
+      "kind": "vehicles",
+      "area": "transport",
+      "title": "Vehicles",
+      "route": "/transport/vehicles",
+      "states": [
+        "active",
+        "maintenance",
+        "retired"
+      ]
+    },
+    {
+      "kind": "stops",
+      "area": "transport",
+      "title": "Routes & stops",
+      "route": "/transport/stops",
+      "states": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "kind": "drivers",
+      "area": "transport",
+      "title": "Driver assignments",
+      "route": "/transport/drivers",
+      "states": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "kind": "trips",
+      "area": "transport",
+      "title": "Trips & boarding",
+      "route": "/transport/trips",
+      "states": [
+        "planned",
+        "started",
+        "completed"
+      ]
+    },
+    {
+      "kind": "boarding",
+      "area": "transport",
+      "title": "Boarding register",
+      "route": "/transport/boarding",
+      "states": [
+        "waiting",
+        "boarded",
+        "alighted"
+      ]
+    },
+    {
+      "kind": "vehicle-maintenance",
+      "area": "transport",
+      "title": "Vehicle maintenance",
+      "route": "/transport/vehicle-maintenance",
+      "states": [
+        "scheduled",
+        "in-progress",
+        "completed"
+      ]
+    },
+    {
+      "kind": "transport-alerts",
+      "area": "transport",
+      "title": "Transport alerts",
+      "route": "/transport/transport-alerts",
+      "states": [
+        "open",
+        "acknowledged",
+        "resolved"
+      ]
+    },
+    {
+      "kind": "books",
+      "area": "library",
+      "title": "Book catalogue",
+      "route": "/library/books",
+      "states": [
+        "active",
+        "archived"
+      ]
+    },
+    {
+      "kind": "copies",
+      "area": "library",
+      "title": "Book copies",
+      "route": "/library/copies",
+      "states": [
+        "available",
+        "lost",
+        "retired"
+      ]
+    },
+    {
+      "kind": "loans",
+      "area": "library",
+      "title": "Circulation desk",
+      "route": "/library/loans",
+      "states": [
+        "issued",
+        "returned"
+      ]
+    },
+    {
+      "kind": "reservations",
+      "area": "library",
+      "title": "Book reservations",
+      "route": "/library/reservations",
+      "states": [
+        "requested",
+        "ready",
+        "collected"
+      ]
+    },
+    {
+      "kind": "library-fines",
+      "area": "library",
+      "title": "Library fines",
+      "route": "/library/library-fines",
+      "states": [
+        "outstanding",
+        "settled"
+      ]
+    },
+    {
+      "kind": "vendors",
+      "area": "inventory",
+      "title": "Vendors",
+      "route": "/inventory/vendors",
+      "states": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "kind": "items",
+      "area": "inventory",
+      "title": "Items & stock",
+      "route": "/inventory/items",
+      "states": [
+        "active",
+        "archived"
+      ]
+    },
+    {
+      "kind": "purchase-orders",
+      "area": "inventory",
+      "title": "Purchase orders",
+      "route": "/inventory/purchase-orders",
+      "states": [
+        "draft",
+        "submitted",
+        "approved",
+        "received"
+      ]
+    },
+    {
+      "kind": "stock-movements",
+      "area": "inventory",
+      "title": "Stock movements",
+      "route": "/inventory/stock-movements",
+      "states": [
+        "draft",
+        "posted"
+      ]
+    },
+    {
+      "kind": "assets",
+      "area": "inventory",
+      "title": "Asset register",
+      "route": "/inventory/assets",
+      "states": [
+        "active",
+        "maintenance",
+        "retired"
+      ]
+    },
+    {
+      "kind": "beds",
+      "area": "hostel",
+      "title": "Buildings, rooms & beds",
+      "route": "/hostel/beds",
+      "states": [
+        "available",
+        "maintenance"
+      ]
+    },
+    {
+      "kind": "hostel-allocations",
+      "area": "hostel",
+      "title": "Hostel allocations",
+      "route": "/hostel/hostel-allocations",
+      "states": [
+        "draft",
+        "active",
+        "ended"
+      ]
+    },
+    {
+      "kind": "roll-call",
+      "area": "hostel",
+      "title": "Hostel roll call",
+      "route": "/hostel/roll-call",
+      "states": [
+        "recorded"
+      ]
+    },
+    {
+      "kind": "outpasses",
+      "area": "hostel",
+      "title": "Outpass requests",
+      "route": "/hostel/outpasses",
+      "states": [
+        "requested",
+        "approved",
+        "out",
+        "returned"
+      ]
+    },
+    {
+      "kind": "hostel-visitors",
+      "area": "hostel",
+      "title": "Hostel visitors",
+      "route": "/hostel/hostel-visitors",
+      "states": [
+        "checked-in",
+        "checked-out"
+      ]
+    },
+    {
+      "kind": "mess",
+      "area": "hostel",
+      "title": "Mess menus",
+      "route": "/hostel/mess",
+      "states": [
+        "planned",
+        "served"
+      ]
+    },
+    {
+      "kind": "incidents",
+      "area": "wellbeing",
+      "title": "Behaviour incidents",
+      "route": "/wellbeing/incidents",
+      "states": [
+        "reported",
+        "reviewed",
+        "resolved"
+      ]
+    },
+    {
+      "kind": "house-points",
+      "area": "wellbeing",
+      "title": "House points & detentions",
+      "route": "/wellbeing/house-points",
+      "states": [
+        "draft",
+        "approved"
+      ]
+    },
+    {
+      "kind": "counselling",
+      "area": "wellbeing",
+      "title": "Counselling cases",
+      "route": "/wellbeing/counselling",
+      "states": [
+        "open",
+        "review",
+        "closed"
+      ]
+    },
+    {
+      "kind": "iep",
+      "area": "wellbeing",
+      "title": "SEN / IEP plans",
+      "route": "/wellbeing/iep",
+      "states": [
+        "draft",
+        "active",
+        "reviewed"
+      ]
+    },
+    {
+      "kind": "safeguarding",
+      "area": "wellbeing",
+      "title": "Safeguarding cases",
+      "route": "/wellbeing/safeguarding",
+      "states": [
+        "reported",
+        "review",
+        "escalated",
+        "closed"
+      ]
+    },
+    {
+      "kind": "clinic",
+      "area": "health",
+      "title": "Clinic visits",
+      "route": "/health/clinic",
+      "states": [
+        "open",
+        "reviewed",
+        "closed"
+      ]
+    },
+    {
+      "kind": "medication",
+      "area": "health",
+      "title": "Medication log",
+      "route": "/health/medication",
+      "states": [
+        "scheduled",
+        "administered",
+        "missed"
+      ]
+    },
+    {
+      "kind": "immunisations",
+      "area": "health",
+      "title": "Immunisations & checks",
+      "route": "/health/immunisations",
+      "states": [
+        "pending",
+        "verified"
+      ]
+    },
+    {
+      "kind": "clubs",
+      "area": "activities",
+      "title": "Clubs & teams",
+      "route": "/activities/clubs",
+      "states": [
+        "draft",
+        "open",
+        "closed"
+      ]
+    },
+    {
+      "kind": "activity-enrolments",
+      "area": "activities",
+      "title": "Activity enrolment",
+      "route": "/activities/activity-enrolments",
+      "states": [
+        "requested",
+        "approved",
+        "completed"
+      ]
+    },
+    {
+      "kind": "trips-events",
+      "area": "activities",
+      "title": "Events & trips",
+      "route": "/activities/trips-events",
+      "states": [
+        "draft",
+        "open",
+        "completed"
+      ]
+    },
+    {
+      "kind": "achievements",
+      "area": "activities",
+      "title": "Achievements",
+      "route": "/activities/achievements",
+      "states": [
+        "draft",
+        "verified"
+      ]
+    },
+    {
+      "kind": "document-requests",
+      "area": "documents",
+      "title": "Document requests",
+      "route": "/documents/document-requests",
+      "states": [
+        "requested",
+        "approved",
+        "issued"
+      ]
+    },
+    {
+      "kind": "document-register",
+      "area": "documents",
+      "title": "Document review register",
+      "route": "/documents/document-register",
+      "states": [
+        "pending",
+        "verified",
+        "rejected"
+      ]
+    },
+    {
+      "kind": "certificate-templates",
+      "area": "documents",
+      "title": "Certificate templates",
+      "route": "/documents/certificate-templates",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "resources",
+      "area": "learning",
+      "title": "Learning resources",
+      "route": "/learning/resources",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "live-classes",
+      "area": "learning",
+      "title": "Live classes",
+      "route": "/learning/live-classes",
+      "states": [
+        "scheduled",
+        "completed"
+      ]
+    },
+    {
+      "kind": "quizzes",
+      "area": "learning",
+      "title": "Online quizzes",
+      "route": "/learning/quizzes",
+      "states": [
+        "draft",
+        "published",
+        "closed"
+      ]
+    },
+    {
+      "kind": "quiz-attempts",
+      "area": "learning",
+      "title": "Quiz attempts",
+      "route": "/learning/quiz-attempts",
+      "states": [
+        "submitted",
+        "graded"
+      ]
+    },
+    {
+      "kind": "visitors",
+      "area": "front-office",
+      "title": "Visitor desk",
+      "route": "/front-office/visitors",
+      "states": [
+        "checked-in",
+        "checked-out"
+      ]
+    },
+    {
+      "kind": "gate-passes",
+      "area": "front-office",
+      "title": "Gate passes",
+      "route": "/front-office/gate-passes",
+      "states": [
+        "requested",
+        "approved",
+        "used"
+      ]
+    },
+    {
+      "kind": "appointments",
+      "area": "front-office",
+      "title": "Office appointments",
+      "route": "/front-office/appointments",
+      "states": [
+        "requested",
+        "confirmed",
+        "completed"
+      ]
+    },
+    {
+      "kind": "saved-reports",
+      "area": "reports",
+      "title": "Report builder & saved views",
+      "route": "/reports/saved-reports",
+      "states": [
+        "draft",
+        "saved"
+      ]
+    },
+    {
+      "kind": "statutory",
+      "area": "reports",
+      "title": "Statutory export requests",
+      "route": "/reports/statutory",
+      "states": [
+        "draft",
+        "reviewed"
+      ]
+    },
+    {
+      "kind": "integrations",
+      "area": "settings",
+      "title": "Integrations & API configuration",
+      "route": "/settings/integrations",
+      "states": [
+        "unconfigured"
+      ]
+    },
+    {
+      "kind": "webhooks",
+      "area": "settings",
+      "title": "Webhook subscriptions",
+      "route": "/settings/webhooks",
+      "states": [
+        "draft",
+        "paused"
+      ]
+    },
+    {
+      "kind": "modules",
+      "area": "settings",
+      "title": "Module configuration",
+      "route": "/settings/modules",
+      "states": [
+        "requested",
+        "approved"
+      ]
+    },
+    {
+      "kind": "billing",
+      "area": "settings",
+      "title": "Subscription & usage",
+      "route": "/settings/billing",
+      "states": [
+        "requested",
+        "reviewed"
+      ]
+    },
+    {
+      "kind": "cms-pages",
+      "area": "website",
+      "title": "Website pages",
+      "route": "/website/cms-pages",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "cms-news",
+      "area": "website",
+      "title": "News & gallery",
+      "route": "/website/cms-news",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "domains",
+      "area": "website",
+      "title": "Domains & SEO",
+      "route": "/website/domains",
+      "states": [
+        "unconfigured"
+      ]
+    },
+    {
+      "kind": "support-tickets",
+      "area": "platform",
+      "title": "Support tickets",
+      "route": "/platform/support-tickets",
+      "states": [
+        "open",
+        "in-progress",
+        "resolved"
+      ]
+    },
+    {
+      "kind": "tenant-requests",
+      "area": "platform",
+      "title": "School provisioning",
+      "route": "/platform/tenant-requests",
+      "states": [
+        "requested",
+        "reviewed",
+        "approved"
+      ]
+    },
+    {
+      "kind": "plans",
+      "area": "platform",
+      "title": "Plans & feature flags",
+      "route": "/platform/plans",
+      "states": [
+        "draft",
+        "published"
+      ]
+    },
+    {
+      "kind": "support-grants",
+      "area": "platform",
+      "title": "Support access requests",
+      "route": "/platform/support-grants",
+      "states": [
+        "requested",
+        "approved",
+        "expired"
+      ]
+    },
+    {
+      "kind": "group-policies",
+      "area": "group",
+      "title": "Group policy masters",
+      "route": "/group/group-policies",
+      "states": [
+        "draft",
+        "approved"
+      ]
+    },
+    {
+      "kind": "alumni",
+      "area": "alumni",
+      "title": "Alumni & transcript requests",
+      "route": "/alumni/alumni",
+      "states": [
+        "requested",
+        "reviewed",
+        "completed"
+      ]
+    }
+  ],
+  "portalSections": {
+    "teacher": [
+      "overview",
+      "classes",
+      "attendance",
+      "timetable",
+      "homework",
+      "submissions",
+      "lessons",
+      "marks",
+      "resources",
+      "messages",
+      "leave",
+      "profile"
+    ],
+    "parent": [
+      "overview",
+      "attendance",
+      "timetable",
+      "homework",
+      "results",
+      "fees",
+      "messages",
+      "notices",
+      "leave",
+      "transport",
+      "events",
+      "ptm",
+      "consents",
+      "documents",
+      "profile"
+    ],
+    "student": [
+      "overview",
+      "attendance",
+      "timetable",
+      "homework",
+      "results",
+      "fees",
+      "notices",
+      "library",
+      "activities",
+      "requests",
+      "learning",
+      "profile"
+    ],
+    "staff-portal": [
+      "overview",
+      "attendance",
+      "leave",
+      "documents",
+      "payroll",
+      "expenses",
+      "training",
+      "messages",
+      "profile"
+    ],
+    "driver": [
+      "overview",
+      "trips",
+      "boarding",
+      "vehicles",
+      "alerts",
+      "profile"
+    ]
+  }
+}

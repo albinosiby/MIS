@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-18T06:22:56.800Z",
+  "testsPassed": 87,
+  "typecheck": "passed",
+  "build": "passed",
+  "presentationCopyFindings": 0,
+  "browserChecks": {
+    "adminDashboard": true,
+    "blankSignInFields": true,
+    "studentSignIn": true,
+    "studentPortalBranding": true,
+    "contactPage": true,
+    "legacyContactRedirect": true,
+    "iconMetadata": true
+  },
+  "assets": [
+    {
+      "url": "/brand/school-mark.svg",
+      "status": 200,
+      "matchesFile": true,
+      "sha256": "352af9ca6e8f2358643b8a12df8cfbce828a28e8cb31e95da91f68397ca377c8"
+    },
+    {
+      "url": "/icon.svg",
+      "status": 200,
+      "matchesFile": true,
+      "sha256": "352af9ca6e8f2358643b8a12df8cfbce828a28e8cb31e95da91f68397ca377c8"
+    },
+    {
+      "url": "/favicon.ico",
+      "status": 200,
+      "matchesFile": true,
+      "sha256": "1e3effbb9635ff7b2eb0caf1341477e856c6c8e60269403702882c429b0482fe"
+    },
+    {
+      "url": "/apple-icon.png",
+      "status": 200,
+      "matchesFile": true,
+      "sha256": "23f87af14f3df9861a15d76b00edb19623bfedd46975e714f6dc8af1b4522f0d"
+    }
+  ],
+  "existingAccountIdentifiersUnchanged": true,
+  "persistedSchoolRecordsUnchanged": true
+}

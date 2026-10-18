@@ -1,0 +1,343 @@
+.workspace-loading {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 24px;
+  font: 14px var(--font-poppins);
+}
+.workspace-loading h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.workspace-loading button {
+  margin: 12px 12px 0 0;
+}
+.workspace-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.workspace-tools > div:first-child {
+  min-width: 180px;
+}
+.workspace-tools strong {
+  font-size: 14px;
+}
+.workspace-tools p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  margin: 4px 0 0;
+}
+.config-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.config-toolbar button,
+.config-toolbar a {
+  font-size: 12px;
+}
+.config-step {
+  overflow: hidden;
+}
+.config-step-heading {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.config-step-heading h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 5px 0 8px;
+}
+.config-step-heading p {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.config-step-heading a {
+  font-size: 13px;
+  color: var(--primary);
+  white-space: nowrap;
+}
+.config-step-heading .config-eyebrow {
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+.config-step-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.config-step-tabs a {
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.config-step-tabs a.selected {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--accent);
+}
+.config-step-tabs a[aria-disabled="true"] {
+  color: var(--muted-foreground);
+  background: var(--muted);
+}
+.config-step-body {
+  padding: 24px;
+  max-width: 1100px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.config-step-body h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 26px 0 16px;
+}
+.config-step-body h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.config-grid > * {
+  min-width: 0;
+}
+.config-grid input,
+.config-grid select {
+  width: 100%;
+}
+.config-note {
+  background: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  color: var(--muted-foreground);
+  margin-bottom: 22px;
+}
+.config-collection {
+  margin: 20px 0;
+}
+.config-collection > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.config-row {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 14px 0;
+  min-width: 0;
+}
+.config-row legend {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  padding: 0 6px;
+}
+.config-row > button {
+  font-size: 12px;
+  color: var(--destructive);
+  margin-top: 8px;
+}
+.config-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 24px;
+  border-top: 1px solid var(--border);
+  background: var(--background);
+  flex-wrap: wrap;
+}
+.config-actions > span {
+  flex: 1;
+}
+.config-errors {
+  white-space: pre-wrap;
+  border: 1px solid var(--destructive);
+  background: #fef2f2;
+  color: var(--destructive);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  font-size: 13px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.config-success {
+  border: 1px solid #86efac;
+  background: #f0fdf4;
+  color: var(--success);
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.config-empty {
+  padding: 28px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+.config-empty h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.config-empty p {
+  margin-bottom: 16px;
+}
+.config-check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 0;
+}
+.config-check input {
+  margin-top: 4px;
+  width: 17px;
+  height: 17px;
+  accent-color: var(--primary);
+  flex-shrink: 0;
+}
+.config-total {
+  background: var(--accent);
+  padding: 16px;
+  border-radius: 6px;
+  margin: 16px 0;
+  font-weight: 500;
+}
+.config-ingestion label {
+  display: block;
+  font-weight: 500;
+  margin: 18px 0 6px;
+}
+.config-ingestion textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  resize: vertical;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.config-ingestion p {
+  margin: 10px 0;
+}
+.config-import-preview {
+  margin: 14px 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+}
+.config-import-preview ul {
+  padding: 12px 18px;
+  list-style: disc;
+}
+.config-logo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 18px;
+}
+.config-logo img {
+  object-fit: contain;
+}
+.config-audit time {
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+.phase-card {
+  text-decoration: none;
+}
+.directory-panel {
+  padding: 24px;
+}
+.directory-panel h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.directory-panel > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.directory-panel table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+.directory-panel td,
+.directory-panel th {
+  text-align: left;
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.directory-panel th {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  background: var(--background);
+}
+.directory-scroll {
+  overflow: auto;
+}
+.directory-panel td button {
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .config-step-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .config-step-heading,
+  .config-step-body,
+  .directory-panel {
+    padding: 18px;
+  }
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+  .config-actions {
+    padding: 14px;
+  }
+  .config-actions > span {
+    display: none;
+  }
+  .config-actions > * {
+    flex: 1;
+  }
+  .workspace-tools {
+    padding: 16px;
+  }
+  .config-step-tabs {
+    padding: 12px 18px;
+  }
+}
+
+.setup-toast.workspace-save-toast {
+  top: 84px;
+  bottom: auto;
+}

@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-10-18T11:21:19.681Z",
+  "passed": 46,
+  "total": 46,
+  "checks": [
+    {
+      "case": "admin existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "admin original membership",
+      "passed": true
+    },
+    {
+      "case": "teacher existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "teacher original membership",
+      "passed": true
+    },
+    {
+      "case": "parent existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "parent original membership",
+      "passed": true
+    },
+    {
+      "case": "staff existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "staff original membership",
+      "passed": true
+    },
+    {
+      "case": "student existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "student original membership",
+      "passed": true
+    },
+    {
+      "case": "Existing isolated lifecycle fixture is available",
+      "passed": true
+    },
+    {
+      "case": "parent denied admission-continuation",
+      "passed": true
+    },
+    {
+      "case": "parent denied admission-withdrawal",
+      "passed": true
+    },
+    {
+      "case": "parent denied result-review-request",
+      "passed": true
+    },
+    {
+      "case": "parent denied result-review-decide",
+      "passed": true
+    },
+    {
+      "case": "parent denied substitution-request",
+      "passed": true
+    },
+    {
+      "case": "parent denied substitution-decide",
+      "passed": true
+    },
+    {
+      "case": "parent denied timetable-publish",
+      "passed": true
+    },
+    {
+      "case": "student denied admission-continuation",
+      "passed": true
+    },
+    {
+      "case": "student denied admission-withdrawal",
+      "passed": true
+    },
+    {
+      "case": "student denied result-review-request",
+      "passed": true
+    },
+    {
+      "case": "student denied result-review-decide",
+      "passed": true
+    },
+    {
+      "case": "student denied substitution-request",
+      "passed": true
+    },
+    {
+      "case": "student denied substitution-decide",
+      "passed": true
+    },
+    {
+      "case": "student denied timetable-publish",
+      "passed": true
+    },
+    {
+      "case": "staff denied admission-continuation",
+      "passed": true
+    },
+    {
+      "case": "staff denied admission-withdrawal",
+      "passed": true
+    },
+    {
+      "case": "staff denied result-review-request",
+      "passed": true
+    },
+    {
+      "case": "staff denied result-review-decide",
+      "passed": true
+    },
+    {
+      "case": "staff denied substitution-request",
+      "passed": true
+    },
+    {
+      "case": "staff denied substitution-decide",
+      "passed": true
+    },
+    {
+      "case": "staff denied timetable-publish",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot publish a timetable",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot confirm admission continuation",
+      "passed": true
+    },
+    {
+      "case": "parent cannot download another student's corrected report",
+      "passed": true
+    },
+    {
+      "case": "student cannot download another student's corrected report",
+      "passed": true
+    },
+    {
+      "case": "staff cannot download another student's corrected report",
+      "passed": true
+    },
+    {
+      "case": "admissionDecisions history unchanged by denied attempts",
+      "passed": true
+    },
+    {
+      "case": "resultReviews history unchanged by denied attempts",
+      "passed": true
+    },
+    {
+      "case": "timetableVersions history unchanged by denied attempts",
+      "passed": true
+    },
+    {
+      "case": "substitutionReviews history unchanged by denied attempts",
+      "passed": true
+    },
+    {
+      "case": "admin membership unchanged",
+      "passed": true
+    },
+    {
+      "case": "teacher membership unchanged",
+      "passed": true
+    },
+    {
+      "case": "parent membership unchanged",
+      "passed": true
+    },
+    {
+      "case": "staff membership unchanged",
+      "passed": true
+    },
+    {
+      "case": "student membership unchanged",
+      "passed": true
+    }
+  ]
+}

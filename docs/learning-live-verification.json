@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-18T09:25:52.569Z",
+  "passed": 27,
+  "total": 27,
+  "checks": [
+    {
+      "case": "teacher existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "teacher original membership",
+      "passed": true
+    },
+    {
+      "case": "student existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "student original membership",
+      "passed": true
+    },
+    {
+      "case": "parent existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "parent original membership",
+      "passed": true
+    },
+    {
+      "case": "Existing teacher is assigned to synthetic student's class",
+      "passed": true
+    },
+    {
+      "case": "Teacher creates a quiz",
+      "passed": true
+    },
+    {
+      "case": "Teacher publishes the quiz",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot impersonate a quiz submission",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot author a student's response",
+      "passed": true
+    },
+    {
+      "case": "Student cannot supply a reviewed score",
+      "passed": true
+    },
+    {
+      "case": "Student submits an assigned quiz",
+      "passed": true
+    },
+    {
+      "case": "Server scores exact answer",
+      "passed": true
+    },
+    {
+      "case": "Student projection withholds answer key",
+      "passed": true
+    },
+    {
+      "case": "Student cannot exceed attempt allowance",
+      "passed": true
+    },
+    {
+      "case": "Student cannot regrade their answer",
+      "passed": true
+    },
+    {
+      "case": "Teacher score maximum is enforced",
+      "passed": true
+    },
+    {
+      "case": "Assigned teacher can review a score",
+      "passed": true
+    },
+    {
+      "case": "Teacher creates a resource",
+      "passed": true
+    },
+    {
+      "case": "Teacher publishes a resource",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot report progress as their child",
+      "passed": true
+    },
+    {
+      "case": "Student can mark assigned resource started",
+      "passed": true
+    },
+    {
+      "case": "Student can mark assigned resource completed",
+      "passed": true
+    },
+    {
+      "case": "Reload retains reviewed score and original response",
+      "passed": true
+    },
+    {
+      "case": "Reported progress persists exactly once",
+      "passed": true
+    },
+    {
+      "case": "Existing student IDs are preserved",
+      "passed": true
+    }
+  ]
+}

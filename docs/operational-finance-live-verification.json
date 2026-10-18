@@ -1,0 +1,512 @@
+{
+  "at": "2026-10-18T12:10:42.624Z",
+  "checks": [
+    {
+      "case": "admin sign-in",
+      "passed": true
+    },
+    {
+      "case": "admin original role unchanged",
+      "passed": true
+    },
+    {
+      "case": "teacher sign-in",
+      "passed": true
+    },
+    {
+      "case": "teacher original role unchanged",
+      "passed": true
+    },
+    {
+      "case": "staff sign-in",
+      "passed": true
+    },
+    {
+      "case": "staff original role unchanged",
+      "passed": true
+    },
+    {
+      "case": "parent sign-in",
+      "passed": true
+    },
+    {
+      "case": "parent original role unchanged",
+      "passed": true
+    },
+    {
+      "case": "student sign-in",
+      "passed": true
+    },
+    {
+      "case": "student original role unchanged",
+      "passed": true
+    },
+    {
+      "case": "Isolated QA fixture appended",
+      "passed": true
+    },
+    {
+      "case": "Stale saves return an explicit conflict",
+      "passed": true
+    },
+    {
+      "case": "Catalogue title created",
+      "passed": true
+    },
+    {
+      "case": "Physical copy registered",
+      "passed": true
+    },
+    {
+      "case": "Parent reserves own linked student",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot reserve unrelated student",
+      "passed": true
+    },
+    {
+      "case": "Queue priority enforced",
+      "passed": true
+    },
+    {
+      "case": "Reservation marked ready",
+      "passed": true
+    },
+    {
+      "case": "Reservation cannot collect before issue",
+      "passed": true
+    },
+    {
+      "case": "Reserved copy issued",
+      "passed": true
+    },
+    {
+      "case": "Reservation linked to collected loan",
+      "passed": true
+    },
+    {
+      "case": "Family creates cancellable reservation",
+      "passed": true
+    },
+    {
+      "case": "Family cancels its own reservation",
+      "passed": true
+    },
+    {
+      "case": "Duplicate issue rejected",
+      "passed": true
+    },
+    {
+      "case": "Cannot lose an issued copy",
+      "passed": true
+    },
+    {
+      "case": "Physical return recorded",
+      "passed": true
+    },
+    {
+      "case": "Fine creates linked invoice",
+      "passed": true
+    },
+    {
+      "case": "Unpaid fine cannot settle",
+      "passed": true
+    },
+    {
+      "case": "Linked fine invoice exists",
+      "passed": true
+    },
+    {
+      "case": "Fine collection recorded",
+      "passed": true
+    },
+    {
+      "case": "Paid fine settles",
+      "passed": true
+    },
+    {
+      "case": "Hostel bed created",
+      "passed": true
+    },
+    {
+      "case": "Hostel allocation drafted",
+      "passed": true
+    },
+    {
+      "case": "Hostel check-in activated",
+      "passed": true
+    },
+    {
+      "case": "Second hostel draft saved",
+      "passed": true
+    },
+    {
+      "case": "Overlapping bed rejected",
+      "passed": true
+    },
+    {
+      "case": "Unused hostel draft cancelled",
+      "passed": true
+    },
+    {
+      "case": "Outpass requested",
+      "passed": true
+    },
+    {
+      "case": "Pending guardian approval blocks school approval",
+      "passed": true
+    },
+    {
+      "case": "Student cannot give guardian approval",
+      "passed": true
+    },
+    {
+      "case": "Linked guardian responds to outpass",
+      "passed": true
+    },
+    {
+      "case": "Outpass approved",
+      "passed": true
+    },
+    {
+      "case": "Departure recorded",
+      "passed": true
+    },
+    {
+      "case": "Departed outpass cannot cancel",
+      "passed": true
+    },
+    {
+      "case": "Checkout blocked while student out",
+      "passed": true
+    },
+    {
+      "case": "Contradictory residence attendance rejected",
+      "passed": true
+    },
+    {
+      "case": "Outpass-linked residence attendance saved",
+      "passed": true
+    },
+    {
+      "case": "Return recorded",
+      "passed": true
+    },
+    {
+      "case": "Hostel monthly invoice issued",
+      "passed": true
+    },
+    {
+      "case": "Duplicate monthly charge rejected",
+      "passed": true
+    },
+    {
+      "case": "Hostel checkout completed",
+      "passed": true
+    },
+    {
+      "case": "Transport vehicle created",
+      "passed": true
+    },
+    {
+      "case": "Transport stop created",
+      "passed": true
+    },
+    {
+      "case": "Driver assigned",
+      "passed": true
+    },
+    {
+      "case": "Passenger assignment drafted",
+      "passed": true
+    },
+    {
+      "case": "Passenger assignment activated",
+      "passed": true
+    },
+    {
+      "case": "Transport allocation updates family route",
+      "passed": true
+    },
+    {
+      "case": "Trip planned",
+      "passed": true
+    },
+    {
+      "case": "Safe dispatch succeeds",
+      "passed": true
+    },
+    {
+      "case": "Dispatch generated waiting roster",
+      "passed": true
+    },
+    {
+      "case": "Trip completion blocked while waiting",
+      "passed": true
+    },
+    {
+      "case": "Student boarded",
+      "passed": true
+    },
+    {
+      "case": "On-board passenger cannot cancel",
+      "passed": true
+    },
+    {
+      "case": "Student alighted",
+      "passed": true
+    },
+    {
+      "case": "Trip completed",
+      "passed": true
+    },
+    {
+      "case": "Vendor created",
+      "passed": true
+    },
+    {
+      "case": "Inventory item created",
+      "passed": true
+    },
+    {
+      "case": "Purchase drafted",
+      "passed": true
+    },
+    {
+      "case": "Purchase submitted",
+      "passed": true
+    },
+    {
+      "case": "Purchase approved",
+      "passed": true
+    },
+    {
+      "case": "Purchase received",
+      "passed": true
+    },
+    {
+      "case": "Stock receipt generated once",
+      "passed": true
+    },
+    {
+      "case": "Purchase linked to payable journal",
+      "passed": true
+    },
+    {
+      "case": "Stock issue draft",
+      "passed": true
+    },
+    {
+      "case": "Excess stock issue rejected",
+      "passed": true
+    },
+    {
+      "case": "Issue quantity corrected before posting",
+      "passed": true
+    },
+    {
+      "case": "Stock issued",
+      "passed": true
+    },
+    {
+      "case": "Stock return draft",
+      "passed": true
+    },
+    {
+      "case": "Excess department return rejected",
+      "passed": true
+    },
+    {
+      "case": "Return corrected before posting",
+      "passed": true
+    },
+    {
+      "case": "Stock returned",
+      "passed": true
+    },
+    {
+      "case": "Partial order drafted",
+      "passed": true
+    },
+    {
+      "case": "Partial order submitted",
+      "passed": true
+    },
+    {
+      "case": "Partial order approved",
+      "passed": true
+    },
+    {
+      "case": "First partial delivery drafted",
+      "passed": true
+    },
+    {
+      "case": "First partial delivery posted",
+      "passed": true
+    },
+    {
+      "case": "Partial order cannot bypass remaining delivery",
+      "passed": true
+    },
+    {
+      "case": "Final partial delivery drafted",
+      "passed": true
+    },
+    {
+      "case": "Final partial delivery posted",
+      "passed": true
+    },
+    {
+      "case": "Final partial delivery completes order",
+      "passed": true
+    },
+    {
+      "case": "Partial receipts allocate exact order cost",
+      "passed": true
+    },
+    {
+      "case": "Vendor payment drafted",
+      "passed": true
+    },
+    {
+      "case": "Overpayment against received stock rejected",
+      "passed": true
+    },
+    {
+      "case": "Vendor payment corrected before posting",
+      "passed": true
+    },
+    {
+      "case": "Vendor bank payment recorded against liability",
+      "passed": true
+    },
+    {
+      "case": "Vendor payment posts bank debit movement",
+      "passed": true
+    },
+    {
+      "case": "Bank journal drafted",
+      "passed": true
+    },
+    {
+      "case": "Balanced bank journal posted",
+      "passed": true
+    },
+    {
+      "case": "Unbalanced bank statement rejected",
+      "passed": true
+    },
+    {
+      "case": "Balanced bank statement imported",
+      "passed": true
+    },
+    {
+      "case": "Duplicate bank statement rejected",
+      "passed": true
+    },
+    {
+      "case": "Unmatched statement cannot close",
+      "passed": true
+    },
+    {
+      "case": "Exact bank journal matched",
+      "passed": true
+    },
+    {
+      "case": "Duplicate match rejected",
+      "passed": true
+    },
+    {
+      "case": "Importer cannot independently reconcile",
+      "passed": true
+    },
+    {
+      "case": "Match correction preserves audit",
+      "passed": true
+    },
+    {
+      "case": "Corrected statement line rematched",
+      "passed": true
+    },
+    {
+      "case": "teacher cannot import bank statements",
+      "passed": true
+    },
+    {
+      "case": "teacher cannot issue service charges",
+      "passed": true
+    },
+    {
+      "case": "teacher cannot mutate inventory",
+      "passed": true
+    },
+    {
+      "case": "staff cannot import bank statements",
+      "passed": true
+    },
+    {
+      "case": "staff cannot issue service charges",
+      "passed": true
+    },
+    {
+      "case": "staff cannot mutate inventory",
+      "passed": true
+    },
+    {
+      "case": "parent cannot import bank statements",
+      "passed": true
+    },
+    {
+      "case": "parent cannot issue service charges",
+      "passed": true
+    },
+    {
+      "case": "parent cannot mutate inventory",
+      "passed": true
+    },
+    {
+      "case": "student cannot import bank statements",
+      "passed": true
+    },
+    {
+      "case": "student cannot issue service charges",
+      "passed": true
+    },
+    {
+      "case": "student cannot mutate inventory",
+      "passed": true
+    },
+    {
+      "case": "Every original student preserved",
+      "passed": true
+    },
+    {
+      "case": "Every original staff record preserved",
+      "passed": true
+    },
+    {
+      "case": "admin membership restored/unchanged",
+      "passed": true
+    },
+    {
+      "case": "teacher membership restored/unchanged",
+      "passed": true
+    },
+    {
+      "case": "staff membership restored/unchanged",
+      "passed": true
+    },
+    {
+      "case": "parent membership restored/unchanged",
+      "passed": true
+    },
+    {
+      "case": "student membership restored/unchanged",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Independent finance closure covered by domain tests; no second finance login was provisioned or existing membership changed."
+  ]
+}

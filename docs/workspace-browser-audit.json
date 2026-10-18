@@ -1,0 +1,2782 @@
+{
+  "workflows": [
+    {
+      "case": "Decimal payment 1.15",
+      "passed": true
+    },
+    {
+      "case": "Payment receipt",
+      "passed": true
+    },
+    {
+      "case": "Payment reversal",
+      "passed": true
+    },
+    {
+      "case": "Batch invoices",
+      "passed": true
+    },
+    {
+      "case": "Fee reminder and concession request",
+      "passed": true
+    },
+    {
+      "case": "/admissions/inquiries · Details",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/admissions/assessments · Details",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/admissions/reenrolment · Update intent",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/admissions/form-builder · Edit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/students/guardians · Edit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/students/transport · Edit route",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/staff/roles · Configure ACL",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/staff/allocations · Edit allocation",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/timetable/builder · Edit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/academics · Edit task",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/academics/subjects · Edit subject",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/academics/syllabus · Update unit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/academics/lessons · Edit",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "/exams · Edit cycle",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Lesson submit, return and approve cycle",
+      "passed": true
+    },
+    {
+      "case": "Homework grade and feedback",
+      "passed": true
+    },
+    {
+      "case": "Administrative approval",
+      "passed": true
+    },
+    {
+      "case": "/attendance · bulk save",
+      "passed": true
+    },
+    {
+      "case": "/attendance/periods · bulk save",
+      "passed": true
+    },
+    {
+      "case": "/attendance/staff · bulk save",
+      "passed": true
+    },
+    {
+      "case": "Registry selection retained on ID cards",
+      "passed": true
+    },
+    {
+      "case": "Guardian notice permissions",
+      "passed": true
+    },
+    {
+      "case": "Staff onboarding and search",
+      "passed": true
+    },
+    {
+      "case": "Staff document review",
+      "passed": true
+    },
+    {
+      "case": "Substitution create/publish/cancel",
+      "passed": true
+    },
+    {
+      "case": "Room reservation save",
+      "passed": true
+    },
+    {
+      "case": "Timetable slot creation",
+      "passed": true
+    },
+    {
+      "case": "Class timetable reset",
+      "passed": true
+    },
+    {
+      "case": "Notice draft/publish/acknowledge",
+      "passed": true
+    },
+    {
+      "case": "Published notice edit returns to draft",
+      "passed": true
+    },
+    {
+      "case": "Report CSV and printable preview",
+      "passed": true
+    },
+    {
+      "case": "Automated report schedule run",
+      "passed": true
+    },
+    {
+      "case": "Visible date persists and scheduled notice publishes",
+      "passed": true
+    },
+    {
+      "case": "Final form serialization · /admissions/inquiries",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /admissions/assessments",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /admissions/reenrolment",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /admissions/form-builder",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /students/guardians",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /students/transport",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /staff/roles",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /staff/allocations",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /academics",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /academics/subjects",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /academics/syllabus",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /academics/lessons",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Final form serialization · /exams",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Subject creation",
+      "passed": true
+    },
+    {
+      "case": "Bus route creation",
+      "passed": true
+    },
+    {
+      "case": "Role creation with permission checkbox group",
+      "passed": true
+    },
+    {
+      "case": "Guardian creation and student link",
+      "passed": true
+    },
+    {
+      "case": "Certificate prepare, issue and preview",
+      "passed": true
+    },
+    {
+      "case": "Prepare and review promotion directives",
+      "passed": true
+    },
+    {
+      "case": "Syllabus unit creation",
+      "passed": true
+    },
+    {
+      "case": "Lesson-plan creation",
+      "passed": true
+    },
+    {
+      "case": "Homework creation and assignment",
+      "passed": true
+    },
+    {
+      "case": "Timed academic event creation",
+      "passed": true
+    },
+    {
+      "case": "Student CSV preview and import",
+      "passed": true
+    },
+    {
+      "case": "Merge a new duplicate without operational history",
+      "passed": true
+    },
+    {
+      "case": "Student identity and demographic form saves",
+      "passed": true
+    },
+    {
+      "case": "Form builder and public intake with document metadata",
+      "passed": true
+    },
+    {
+      "case": "Full workspace backup restore",
+      "passed": true
+    },
+    {
+      "case": "Setup save · school-profile",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · academic-terms",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · classes-sections",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · bell-schedule",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · fee-structure",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · staff-allocations",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · data-ingestion",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Setup save · portal-gateway",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "case": "Complete setup and validation loop",
+      "passed": true
+    },
+    {
+      "case": "Academic-year rollover",
+      "passed": true
+    },
+    {
+      "case": "Custom route retained across rollover",
+      "passed": true
+    },
+    {
+      "case": "Archived student forms are read-only",
+      "passed": true
+    },
+    {
+      "case": "Archived setup form is read-only",
+      "passed": true
+    },
+    {
+      "case": "Archived report export remains available",
+      "passed": true
+    },
+    {
+      "case": "Stale-tab save conflict protection",
+      "passed": true
+    },
+    {
+      "case": "Stale-tab reload recovery",
+      "passed": true
+    },
+    {
+      "case": "Start fresh resets setup sign-offs",
+      "passed": true
+    },
+    {
+      "case": "Cancel reset leaves saved data unchanged",
+      "passed": true
+    },
+    {
+      "case": "Reset sample restores six configured steps",
+      "passed": true
+    },
+    {
+      "case": "Malformed backup rejected without replacement",
+      "passed": true
+    },
+    {
+      "case": "New exam creation selects its own cycle",
+      "passed": true
+    },
+    {
+      "case": "Marks navigation retains selected cycle",
+      "passed": true
+    },
+    {
+      "case": "Exam schedule/publish/marks/lock lifecycle",
+      "passed": true
+    },
+    {
+      "case": "Approved results unlock restores editing",
+      "passed": true
+    },
+    {
+      "case": "Marks CSV import updates selected examination",
+      "passed": true
+    },
+    {
+      "case": "New event returns to its own calendar month",
+      "passed": true
+    },
+    {
+      "case": "Optional custom date and staff application-document visibility",
+      "passed": true
+    },
+    {
+      "case": "Paused intake blocks new public applications",
+      "passed": true
+    }
+  ],
+  "routes": [
+    {
+      "route": "/dashboard",
+      "buttons": [
+        "System Audit Log",
+        "Quick Notice",
+        "Add Academic Event",
+        "LiveOperationsLIVE",
+        "SetupWizard100% Done",
+        "ApprovalsInbox0 Pending",
+        "AcademicCalendar2 Upcoming",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions/analytics",
+        "/admissions/inquiries",
+        "/school-setup",
+        "/dashboard/approvals",
+        "/fees",
+        "/academics/lessons",
+        "/exams",
+        "/notifications",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/dashboard/approvals",
+      "buttons": [
+        "+ New request",
+        "Previous",
+        "Next",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/attendance/leave",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/dashboard/calendar",
+      "buttons": [
+        "Import .ics calendar",
+        "Export .ics",
+        "Month",
+        "Week",
+        "Agenda",
+        "← Previous",
+        "Next →",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "Term 1 Parent–Teacher Meeting published",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "Half-yearly examinations begin published",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event",
+        "+ Event"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/dashboard/calendar/new",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/dashboard/calendar/new",
+      "buttons": [
+        "Save academic event"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/audit",
+      "buttons": [
+        "Export CSV",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/dashboard",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions",
+      "buttons": [
+        "Export CSV",
+        "Aadhya Sharma",
+        "Assign / Edit →",
+        "Move to contacted",
+        "Meera Krishnan",
+        "Assign / Edit →",
+        "Move to contacted",
+        "Siddharth Verma (Sample 2)",
+        "Assign / Edit →",
+        "Move to contacted",
+        "Final Public Candidate",
+        "Assign / Edit →",
+        "Move to contacted",
+        "Reyansh Gupta",
+        "Assign / Edit →",
+        "Move to campus visit",
+        "Aadhya Sharma (Sample 2)",
+        "Assign / Edit →",
+        "Move to campus visit",
+        "Meera Krishnan (Sample 2)",
+        "Assign / Edit →",
+        "Move to campus visit",
+        "Tanvi Seth",
+        "Assign / Edit →",
+        "Move to application",
+        "Reyansh Gupta (Sample 2)",
+        "Assign / Edit →",
+        "Move to application",
+        "Vihaan Nair",
+        "Assign / Edit →",
+        "Move to assessment",
+        "Ananya Iyer",
+        "Assign / Edit →",
+        "Move to offered",
+        "Tanvi Seth (Sample 2)",
+        "Assign / Edit →",
+        "Move to assessment",
+        "Vihaan Nair (Sample 2)",
+        "Assign / Edit →",
+        "Move to offered",
+        "Kavya Patel",
+        "Assign / Edit →",
+        "Ishaan Mehta",
+        "Assign / Edit →",
+        "Move to offered",
+        "Ananya Iyer (Sample 2)",
+        "Assign / Edit →",
+        "Kavya Patel (Sample 2)",
+        "Assign / Edit →",
+        "Move to offered",
+        "Siddharth Verma",
+        "Assign / Edit →",
+        "Move to new",
+        "Ishaan Mehta (Sample 2)",
+        "Assign / Edit →",
+        "Move to new"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions/public-form",
+        "/admissions/inquiries/new",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries",
+        "/students/new?inquiry=ENQ-2026-0406",
+        "/students/new?inquiry=ENQ-2026-0414",
+        "/admissions/form-builder",
+        "/admissions/seats",
+        "/admissions/assessments",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/inquiries",
+      "buttons": [
+        "Export CSV",
+        "Details",
+        "contacted →",
+        "Details",
+        "campus visit →",
+        "Details",
+        "application →",
+        "Details",
+        "assessment →",
+        "Details",
+        "offered →",
+        "Details",
+        "Details",
+        "offered →",
+        "Details",
+        "new →",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/students/new?inquiry=ENQ-2026-0406",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/inquiries/new",
+      "buttons": [
+        "Create enquiry"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/public-form",
+      "buttons": [
+        "Print QR stand / PDF"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions/public-form?apply=1",
+        "/admissions/form-builder",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/form-builder",
+      "buttons": [
+        "Save changes",
+        "+ Add field",
+        "Edit",
+        "Remove",
+        "Edit",
+        "Remove",
+        "Edit",
+        "Remove",
+        "Edit",
+        "Remove",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/applications",
+      "buttons": [
+        "Export CSV",
+        "Details",
+        "assessment →",
+        "Details",
+        "offered →",
+        "Details",
+        "Details",
+        "offered →",
+        "Details",
+        "assessment →",
+        "Details",
+        "offered →",
+        "Details",
+        "Details",
+        "offered →",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/students/new?inquiry=ENQ-2026-0406",
+        "/students/new?inquiry=ENQ-2026-0414",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/assessments",
+      "buttons": [
+        "Export CSV",
+        "Details",
+        "assessment →",
+        "Details",
+        "offered →",
+        "Details",
+        "Details",
+        "offered →",
+        "Details",
+        "assessment →",
+        "Details",
+        "offered →",
+        "Details",
+        "Details",
+        "offered →",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/students/new?inquiry=ENQ-2026-0406",
+        "/students/new?inquiry=ENQ-2026-0414",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/seats",
+      "buttons": [
+        "Export CSV",
+        "Previous",
+        "Next",
+        "Details",
+        "offered →",
+        "Details",
+        "offered →",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/offers",
+      "buttons": [
+        "Export CSV",
+        "Details",
+        "Details",
+        "offered →",
+        "Details",
+        "Details",
+        "offered →",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/students/new?inquiry=ENQ-2026-0406",
+        "/students/new?inquiry=ENQ-2026-0414",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/reenrolment",
+      "buttons": [
+        "Export CSV",
+        "Update intent",
+        "Update intent",
+        "Update intent",
+        "Update intent",
+        "Update intent",
+        "Update intent",
+        "Update intent",
+        "Update intent",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/admissions/analytics",
+      "buttons": [
+        "Export CSV"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/admissions",
+        "/admissions/applications",
+        "/admissions/form-builder",
+        "/admissions/assessments",
+        "/admissions/seats",
+        "/admissions/offers",
+        "/admissions/reenrolment",
+        "/admissions/analytics",
+        "/admissions/inquiries/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students",
+      "buttons": [
+        "Export CSV",
+        "Select matching",
+        "Clear selection",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/students/profile?id=student-1",
+        "/students/profile?id=student-1",
+        "/students/profile?id=student-2",
+        "/students/profile?id=student-2",
+        "/students/profile?id=student-3",
+        "/students/profile?id=student-3",
+        "/students/profile?id=student-4",
+        "/students/profile?id=student-4",
+        "/students/profile?id=student-5",
+        "/students/profile?id=student-5",
+        "/students/profile?id=student-6",
+        "/students/profile?id=student-6",
+        "/students/profile?id=student-7",
+        "/students/profile?id=student-7",
+        "/students/profile?id=student-8",
+        "/students/profile?id=student-8",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/new",
+      "buttons": [
+        "Save & continue →",
+        "← Previous step"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/profile",
+      "buttons": [
+        "Save changes",
+        "Save changes"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/guardians",
+      "buttons": [
+        "Export CSV",
+        "+ Add guardian",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Edit",
+        "Manage links",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/import",
+      "buttons": [
+        "Download CSV template",
+        "Validate & preview CSV"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students",
+        "/staff",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/promotions",
+      "buttons": [
+        "Export CSV",
+        "Prepare missing retention directives",
+        "Configure",
+        "Configure",
+        "Configure",
+        "Configure",
+        "Configure",
+        "Configure",
+        "Configure",
+        "Configure",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/settings/year-end",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/id-cards",
+      "buttons": [
+        "Export CSV",
+        "Print / Save PDF"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/certificates",
+      "buttons": [
+        "Export CSV",
+        "Print / Save PDF",
+        "+ Prepare certificate",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/merge",
+      "buttons": [
+        "Export CSV",
+        "Review & merge"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/students/transport",
+      "buttons": [
+        "Export CSV",
+        "+ Add route",
+        "Edit route",
+        "Edit route",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/students",
+        "/students/guardians",
+        "/students/promotions",
+        "/students/import",
+        "/students/id-cards",
+        "/students/certificates",
+        "/students/transport",
+        "/students/merge",
+        "/students/new",
+        "/students/import",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/staff",
+      "buttons": [
+        "Export CSV",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff",
+        "/staff/new",
+        "/staff/roles",
+        "/staff/allocations",
+        "/staff/documentation",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/staff/new",
+        "/staff/profile?id=staff-rajiv",
+        "/staff/profile?id=staff-rajiv",
+        "/staff/profile?id=staff-1",
+        "/staff/profile?id=staff-1",
+        "/staff/profile?id=staff-2",
+        "/staff/profile?id=staff-2",
+        "/staff/profile?id=staff-3",
+        "/staff/profile?id=staff-3",
+        "/staff/profile?id=staff-4",
+        "/staff/profile?id=staff-4",
+        "/staff/profile?id=staff-5",
+        "/staff/profile?id=staff-5",
+        "/staff/profile?id=staff-6",
+        "/staff/profile?id=staff-6",
+        "/staff/profile?id=staff-7",
+        "/staff/profile?id=staff-7",
+        "/staff/documentation",
+        "/attendance/staff",
+        "/timetable/substitutions",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/staff/new",
+      "buttons": [
+        "Complete onboarding"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff",
+        "/staff/new",
+        "/staff/roles",
+        "/staff/allocations",
+        "/staff/documentation",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/staff/profile",
+      "buttons": [
+        "Save changes",
+        "Save changes"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff",
+        "/staff/allocations",
+        "/attendance/staff",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/staff/roles",
+      "buttons": [
+        "Export CSV",
+        "+ New role",
+        "Configure ACL",
+        "Configure ACL",
+        "Configure ACL",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff",
+        "/staff/new",
+        "/staff/roles",
+        "/staff/allocations",
+        "/staff/documentation",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/staff/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/staff/allocations",
+      "buttons": [
+        "Export CSV",
+        "+ Allocate faculty",
+        "Edit allocation",
+        "Edit allocation",
+        "Edit allocation",
+        "Edit allocation",
+        "Edit allocation",
+        "Edit allocation",
+        "Edit allocation",
+        "Edit allocation",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff",
+        "/staff/new",
+        "/staff/roles",
+        "/staff/allocations",
+        "/staff/documentation",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/staff/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/staff/documentation",
+      "buttons": [
+        "Export CSV",
+        "Review checklist",
+        "Review checklist",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff",
+        "/staff/new",
+        "/staff/roles",
+        "/staff/allocations",
+        "/staff/documentation",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/staff/new",
+        "/staff/profile?id=staff-rajiv",
+        "/staff/profile?id=staff-1",
+        "/staff/profile?id=staff-2",
+        "/staff/profile?id=staff-3",
+        "/staff/profile?id=staff-4",
+        "/staff/profile?id=staff-5",
+        "/staff/profile?id=staff-6",
+        "/staff/profile?id=staff-7",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/attendance",
+      "buttons": [
+        "Mark all visible present",
+        "Export CSV",
+        "Previous",
+        "Next",
+        "Save attendance register"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/attendance",
+        "/attendance/periods",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/attendance/periods",
+      "buttons": [
+        "Mark all visible present",
+        "Export CSV",
+        "Previous",
+        "Next",
+        "Save attendance register"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/attendance",
+        "/attendance/periods",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/attendance/staff",
+      "buttons": [
+        "Mark all visible present",
+        "Export CSV",
+        "Previous",
+        "Next",
+        "Save attendance register"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/attendance",
+        "/attendance/periods",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/attendance/leave",
+      "buttons": [
+        "+ Request leave",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/attendance",
+        "/attendance/periods",
+        "/attendance/staff",
+        "/attendance/leave",
+        "/timetable/substitutions",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/timetable",
+      "buttons": [
+        "Export CSV",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Book now",
+        "Book now",
+        "Book now",
+        "Book now",
+        "Book now",
+        "Previous",
+        "Next",
+        "Print class PDF",
+        "Publish class schedule"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/timetable/builder",
+        "/timetable",
+        "/timetable/builder",
+        "/timetable/substitutions",
+        "/timetable/substitutions",
+        "/school-setup/bell-schedule",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/timetable/builder",
+      "buttons": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "+ Assign slot",
+        "Edit",
+        "Remove",
+        "Edit",
+        "Remove",
+        "Edit",
+        "Remove",
+        "Previous",
+        "Next",
+        "Book now",
+        "Book now",
+        "Book now",
+        "Book now",
+        "Book now",
+        "Previous",
+        "Next",
+        "Reset empty grid",
+        "Print class PDF",
+        "Publish class schedule"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/timetable",
+        "/timetable/builder",
+        "/timetable/substitutions",
+        "/timetable/substitutions",
+        "/school-setup/bell-schedule",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/timetable/substitutions",
+      "buttons": [
+        "Assign Substitute Teacher",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/timetable",
+        "/attendance/leave",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics",
+      "buttons": [
+        "Export CSV",
+        "Edit task",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/academics",
+        "/academics/subjects",
+        "/academics/syllabus",
+        "/academics/lessons",
+        "/academics/lessons/new",
+        "/academics/homework/new",
+        "/academics/submissions?id=homework-1",
+        "/academics/syllabus",
+        "/academics/lessons",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics/subjects",
+      "buttons": [
+        "Export CSV",
+        "+ Add subject",
+        "Edit subject",
+        "Edit subject",
+        "Edit subject",
+        "Edit subject",
+        "Edit subject",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/academics",
+        "/academics/subjects",
+        "/academics/syllabus",
+        "/academics/lessons",
+        "/academics/lessons/new",
+        "/academics/homework/new",
+        "/staff/allocations",
+        "/staff/allocations",
+        "/staff/allocations",
+        "/staff/allocations",
+        "/staff/allocations",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics/syllabus",
+      "buttons": [
+        "Export CSV",
+        "+ Add unit",
+        "Update unit",
+        "Update unit",
+        "Update unit",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/academics",
+        "/academics/subjects",
+        "/academics/syllabus",
+        "/academics/lessons",
+        "/academics/lessons/new",
+        "/academics/homework/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics/lessons",
+      "buttons": [
+        "Export CSV",
+        "Edit",
+        "Approve",
+        "Return",
+        "Edit",
+        "Submit",
+        "Edit",
+        "Submit",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/academics",
+        "/academics/subjects",
+        "/academics/syllabus",
+        "/academics/lessons",
+        "/academics/lessons/new",
+        "/academics/homework/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics/lessons/new",
+      "buttons": [
+        "Save lesson plan"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics/homework/new",
+      "buttons": [
+        "Create & assign homework"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/academics/submissions",
+      "buttons": [
+        "Grade / feedback",
+        "Grade / feedback",
+        "Grade / feedback",
+        "Grade / feedback",
+        "Grade / feedback",
+        "Grade / feedback",
+        "Mark submitted",
+        "Mark submitted",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/academics",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/exams",
+      "buttons": [
+        "Export CSV",
+        "Import Marks (CSV)",
+        "Edit cycle",
+        "Auto-schedule papers",
+        "Publish exam cycle",
+        "Complete & lock results",
+        "+ Add paper",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/exams/new",
+        "/exams/marks?exam=exam-term-1",
+        "/exams?exam=exam-term-1",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/exams/new",
+      "buttons": [
+        "Create exam cycle"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/exams/marks",
+      "buttons": [
+        "Export CSV",
+        "Import Marks (CSV)",
+        "Previous",
+        "Next",
+        "Save marks",
+        "Request unlock",
+        "Previous",
+        "Next",
+        "Print report card / Save PDF"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/exams/new",
+        "/exams/marks?exam=exam-term-1",
+        "/exams?exam=exam-term-1",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/fees",
+      "buttons": [
+        "+ Generate invoices",
+        "Export CSV",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Previous",
+        "Next",
+        "Prepare guardian reminders",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/fees/collect",
+        "/fees/invoices",
+        "/school-setup/fee-structure",
+        "/fees/collect?invoice=invoice-2",
+        "/fees/collect?invoice=invoice-3",
+        "/fees/collect?invoice=invoice-4",
+        "/fees/collect?invoice=invoice-5",
+        "/fees/collect?invoice=invoice-6",
+        "/fees/collect?invoice=invoice-7",
+        "/fees/collect?invoice=invoice-8",
+        "/fees/collect?invoice=invoice-9",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/fees/invoices",
+      "buttons": [
+        "+ Generate invoices",
+        "Export CSV",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Concession request",
+        "Previous",
+        "Next",
+        "Prepare guardian reminders",
+        "Previous",
+        "Next"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/fees/collect",
+        "/fees/invoices",
+        "/school-setup/fee-structure",
+        "/fees/collect?invoice=invoice-2",
+        "/fees/collect?invoice=invoice-3",
+        "/fees/collect?invoice=invoice-4",
+        "/fees/collect?invoice=invoice-5",
+        "/fees/collect?invoice=invoice-6",
+        "/fees/collect?invoice=invoice-7",
+        "/fees/collect?invoice=invoice-8",
+        "/fees/collect?invoice=invoice-9",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/fees/collect",
+      "buttons": [
+        "Record simulated payment"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/fees",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/communication",
+      "buttons": [
+        "Export CSV",
+        "Process scheduled notices",
+        "Edit notice",
+        "Simulate recipient acknowledgments",
+        "Edit notice",
+        "Simulate recipient acknowledgments"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/communication",
+        "/communication/new",
+        "/reports",
+        "/communication/new",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/communication/new",
+      "buttons": [
+        "Save notice draft"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/communication",
+        "/communication/new",
+        "/reports",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/reports",
+      "buttons": [
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Run & download CSV",
+        "Preview / PDF",
+        "Previous",
+        "Next",
+        "+ Schedule",
+        "Run demo scheduler"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/communication",
+        "/communication/new",
+        "/reports",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/settings",
+      "buttons": [
+        "Export CSV",
+        "Save All Settings",
+        "Previous",
+        "Next",
+        "+ New section",
+        "Previous",
+        "Next",
+        "Previous",
+        "Next",
+        "Print sample PDF",
+        "Export full backup",
+        "Restore backup",
+        "Start fresh",
+        "Reset sample workspace",
+        "Reload saved data"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup/school-profile",
+        "/school-setup/academic-terms",
+        "/school-setup/bell-schedule",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/school-setup/classes-sections",
+        "/staff/roles",
+        "/students/certificates",
+        "/settings/year-end",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/settings/year-end",
+      "buttons": [
+        "Execute academic-year rollover",
+        "Export full backup",
+        "Restore backup",
+        "Start fresh",
+        "Reset sample workspace",
+        "Reload saved data"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup",
+        "/students/promotions",
+        "/dashboard/approvals",
+        "/exams",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/profile",
+      "buttons": [
+        "Save changes",
+        "Save changes",
+        "Configure demo MFA"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/staff/roles",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/notifications",
+      "buttons": [
+        "Mark all as read",
+        "Mark read",
+        "Mark read",
+        "Mark read"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/attendance/leave",
+        "/exams",
+        "/communication",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "route": "/support",
+      "buttons": [
+        "Export full backup",
+        "Restore backup",
+        "Start fresh",
+        "Reset sample workspace",
+        "Reload saved data"
+      ],
+      "links": [
+        "#main-content",
+        "/school-setup",
+        "/dashboard",
+        "/admissions",
+        "/students",
+        "/staff",
+        "/attendance",
+        "/timetable",
+        "/academics",
+        "/exams",
+        "/fees",
+        "/communication",
+        "/settings",
+        "/school-setup"
+      ],
+      "rendered": true,
+      "alerts": []
+    }
+  ],
+  "setup": [
+    {
+      "step": "school-profile",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "academic-terms",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "classes-sections",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "bell-schedule",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "fee-structure",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "staff-allocations",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "data-ingestion",
+      "rendered": true,
+      "alerts": []
+    },
+    {
+      "step": "portal-gateway",
+      "rendered": true,
+      "alerts": []
+    }
+  ],
+  "verification": {
+    "tests": 52,
+    "controls": 275,
+    "unbound": 0
+  }
+}

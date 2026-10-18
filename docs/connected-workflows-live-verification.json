@@ -1,0 +1,339 @@
+{
+  "checkedAt": "2026-10-18T09:25:24.637Z",
+  "passed": 83,
+  "total": 83,
+  "checks": [
+    {
+      "case": "admin existing login",
+      "passed": true
+    },
+    {
+      "case": "teacher existing login",
+      "passed": true
+    },
+    {
+      "case": "staff existing login",
+      "passed": true
+    },
+    {
+      "case": "parent existing login",
+      "passed": true
+    },
+    {
+      "case": "student existing login",
+      "passed": true
+    },
+    {
+      "case": "admin lists only own assigned context",
+      "passed": true
+    },
+    {
+      "case": "admin cannot select another account context",
+      "passed": true
+    },
+    {
+      "case": "admin can inspect own MFA without changing credentials",
+      "passed": true
+    },
+    {
+      "case": "teacher lists only own assigned context",
+      "passed": true
+    },
+    {
+      "case": "teacher cannot select another account context",
+      "passed": true
+    },
+    {
+      "case": "teacher can inspect own MFA without changing credentials",
+      "passed": true
+    },
+    {
+      "case": "staff lists only own assigned context",
+      "passed": true
+    },
+    {
+      "case": "staff cannot select another account context",
+      "passed": true
+    },
+    {
+      "case": "staff can inspect own MFA without changing credentials",
+      "passed": true
+    },
+    {
+      "case": "parent lists only own assigned context",
+      "passed": true
+    },
+    {
+      "case": "parent cannot select another account context",
+      "passed": true
+    },
+    {
+      "case": "parent can inspect own MFA without changing credentials",
+      "passed": true
+    },
+    {
+      "case": "student lists only own assigned context",
+      "passed": true
+    },
+    {
+      "case": "student cannot select another account context",
+      "passed": true
+    },
+    {
+      "case": "student can inspect own MFA without changing credentials",
+      "passed": true
+    },
+    {
+      "case": "Signed-out conversation denied",
+      "passed": true
+    },
+    {
+      "case": "Staff cannot inspect admin jobs",
+      "passed": true
+    },
+    {
+      "case": "Admin can inspect jobs",
+      "passed": true
+    },
+    {
+      "case": "admin direct messages table denied",
+      "passed": true
+    },
+    {
+      "case": "parent direct messages table denied",
+      "passed": true
+    },
+    {
+      "case": "teacher direct messages table denied",
+      "passed": true
+    },
+    {
+      "case": "student direct messages table denied",
+      "passed": true
+    },
+    {
+      "case": "staff direct messages table denied",
+      "passed": true
+    },
+    {
+      "case": "Admin creates explicit parent thread",
+      "passed": true
+    },
+    {
+      "case": "Conversation retry is idempotent",
+      "passed": true
+    },
+    {
+      "case": "Changed participants cannot reuse create key",
+      "passed": true
+    },
+    {
+      "case": "Explicit parent can read thread",
+      "passed": true
+    },
+    {
+      "case": "Uninvited teacher cannot read thread",
+      "passed": true
+    },
+    {
+      "case": "Uninvited student cannot read thread",
+      "passed": true
+    },
+    {
+      "case": "Nonparticipant cannot send",
+      "passed": true
+    },
+    {
+      "case": "Permitted message queued",
+      "passed": true
+    },
+    {
+      "case": "Send retry does not duplicate message",
+      "passed": true
+    },
+    {
+      "case": "Changed message cannot reuse key",
+      "passed": true
+    },
+    {
+      "case": "Wrong origin cannot send",
+      "passed": true
+    },
+    {
+      "case": "Message has one durable job",
+      "passed": true
+    },
+    {
+      "case": "Worker delivers without browser",
+      "passed": true
+    },
+    {
+      "case": "Parent receives permitted inbox notification",
+      "passed": true
+    },
+    {
+      "case": "Unrelated staff does not receive private notification",
+      "passed": true
+    },
+    {
+      "case": "Parent can flag a thread",
+      "passed": true
+    },
+    {
+      "case": "Flagged thread prevents send",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot bypass moderation",
+      "passed": true
+    },
+    {
+      "case": "Participating admin can close thread",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot configure school reports",
+      "passed": true
+    },
+    {
+      "case": "Admin report definition persisted",
+      "passed": true
+    },
+    {
+      "case": "Reload contains saved report",
+      "passed": true
+    },
+    {
+      "case": "Publish immutable report snapshot",
+      "passed": true
+    },
+    {
+      "case": "Admin downloads pdf",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot download school pdf",
+      "passed": true
+    },
+    {
+      "case": "Admin downloads xlsx",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot download school xlsx",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot revoke a school publication",
+      "passed": true
+    },
+    {
+      "case": "Admin records publication revocation",
+      "passed": true
+    },
+    {
+      "case": "Publication revocation retry is idempotent",
+      "passed": true
+    },
+    {
+      "case": "Revoked publication bytes are denied",
+      "passed": true
+    },
+    {
+      "case": "Register reports revocation without issued contents or actor IDs",
+      "passed": true
+    },
+    {
+      "case": "Revocation leaves issued snapshot and workspace revision unchanged",
+      "passed": true
+    },
+    {
+      "case": "Database atomically rejects a transcript using revoked results",
+      "passed": true
+    },
+    {
+      "case": "Rejected dependency leaves the school revision unchanged",
+      "passed": true
+    },
+    {
+      "case": "admin direct revocation registry denied",
+      "passed": true
+    },
+    {
+      "case": "teacher direct revocation registry denied",
+      "passed": true
+    },
+    {
+      "case": "staff direct revocation registry denied",
+      "passed": true
+    },
+    {
+      "case": "parent direct revocation registry denied",
+      "passed": true
+    },
+    {
+      "case": "student direct revocation registry denied",
+      "passed": true
+    },
+    {
+      "case": "Synthetic certificate command persists",
+      "passed": true
+    },
+    {
+      "case": "Synthetic certificate command persists",
+      "passed": true
+    },
+    {
+      "case": "Synthetic certificate command persists",
+      "passed": true
+    },
+    {
+      "case": "Issued certificate verifies without student identity",
+      "passed": true
+    },
+    {
+      "case": "Parent downloads their child's issued certificate",
+      "passed": true
+    },
+    {
+      "case": "Admin can revoke issued certificate",
+      "passed": true
+    },
+    {
+      "case": "Revoked certificate no longer verifies",
+      "passed": true
+    },
+    {
+      "case": "Revocation blocks parent certificate download",
+      "passed": true
+    },
+    {
+      "case": "Durable report schedule saved",
+      "passed": true
+    },
+    {
+      "case": "Repeated schedule discovery queues exactly once",
+      "passed": true
+    },
+    {
+      "case": "Report worker publishes snapshot and advances schedule",
+      "passed": true
+    },
+    {
+      "case": "Verification schedule paused after testing",
+      "passed": true
+    },
+    {
+      "case": "Stale save cannot overwrite newer data",
+      "passed": true
+    },
+    {
+      "case": "Existing student/staff IDs preserved",
+      "passed": true
+    },
+    {
+      "case": "Staff membership remains staff",
+      "passed": true
+    }
+  ]
+}

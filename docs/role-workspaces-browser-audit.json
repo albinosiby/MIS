@@ -1,0 +1,1653 @@
+{
+  "workflows": [
+    {
+      "case": "Administrator sign-in and operational directory",
+      "passed": true
+    },
+    {
+      "case": "Library renewal persists new due date and audit history",
+      "passed": true
+    },
+    {
+      "case": "admin login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "principal login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "teacher login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "staff login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "accountant login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "parent login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "student login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "driver login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "librarian login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "hr login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "nurse login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "counsellor login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "transport login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "inventory login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "warden login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "platform login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "group login and assigned home",
+      "passed": true
+    },
+    {
+      "case": "Parent books a school-authored meeting",
+      "passed": true
+    },
+    {
+      "case": "Parent responds to school consent",
+      "passed": true
+    },
+    {
+      "case": "Parent denied administrator dashboard",
+      "passed": true
+    },
+    {
+      "case": "Parent decimal checkout simulation",
+      "passed": true
+    },
+    {
+      "case": "Parent checkout failure remains a distinct state",
+      "passed": true
+    },
+    {
+      "case": "Teacher creates assigned-class homework",
+      "passed": true
+    },
+    {
+      "case": "Student submits answer for assigned homework",
+      "passed": true
+    },
+    {
+      "case": "Teacher feedback and reviewed score reach the linked student",
+      "passed": true
+    },
+    {
+      "case": "Public onboarding request persists without granting an account",
+      "passed": true
+    },
+    {
+      "case": "Platform queue receives public school onboarding request",
+      "passed": true
+    },
+    {
+      "case": "Public intake audit retains public actor rather than principal",
+      "passed": true
+    }
+  ],
+  "operationalRoutes": [
+    {
+      "route": "/fees/payment-attempts",
+      "title": "Online payment attempts",
+      "errors": []
+    },
+    {
+      "route": "/fees/refunds",
+      "title": "Refund requests",
+      "errors": []
+    },
+    {
+      "route": "/fees/reconciliation",
+      "title": "Bank reconciliation",
+      "errors": []
+    },
+    {
+      "route": "/fees/journals",
+      "title": "Day-book & journal",
+      "errors": []
+    },
+    {
+      "route": "/fees/payment-plans",
+      "title": "Payment plans",
+      "errors": []
+    },
+    {
+      "route": "/fees/receipt-templates",
+      "title": "Receipt templates",
+      "errors": []
+    },
+    {
+      "route": "/fees/gateways",
+      "title": "Payment gateway settings",
+      "errors": []
+    },
+    {
+      "route": "/exams/grading-scales",
+      "title": "Grading scales",
+      "errors": []
+    },
+    {
+      "route": "/exams/report-templates",
+      "title": "Report-card templates",
+      "errors": []
+    },
+    {
+      "route": "/exams/moderation",
+      "title": "Marks moderation",
+      "errors": []
+    },
+    {
+      "route": "/exams/seating",
+      "title": "Exam seating",
+      "errors": []
+    },
+    {
+      "route": "/exams/re-evaluations",
+      "title": "Re-evaluation requests",
+      "errors": []
+    },
+    {
+      "route": "/communication/message-templates",
+      "title": "Message templates",
+      "errors": []
+    },
+    {
+      "route": "/communication/messages",
+      "title": "Messages",
+      "errors": []
+    },
+    {
+      "route": "/communication/deliveries",
+      "title": "Delivery log",
+      "errors": []
+    },
+    {
+      "route": "/communication/ptm",
+      "title": "Parent–teacher meetings",
+      "errors": []
+    },
+    {
+      "route": "/communication/surveys",
+      "title": "Surveys & polls",
+      "errors": []
+    },
+    {
+      "route": "/communication/consents",
+      "title": "Consent requests",
+      "errors": []
+    },
+    {
+      "route": "/hr/contracts",
+      "title": "Staff contracts",
+      "errors": []
+    },
+    {
+      "route": "/hr/payroll",
+      "title": "Payroll runs",
+      "errors": []
+    },
+    {
+      "route": "/hr/expenses",
+      "title": "Expense claims",
+      "errors": []
+    },
+    {
+      "route": "/hr/appraisals",
+      "title": "Staff appraisals",
+      "errors": []
+    },
+    {
+      "route": "/hr/training",
+      "title": "Training records",
+      "errors": []
+    },
+    {
+      "route": "/hr/vacancies",
+      "title": "Recruitment vacancies",
+      "errors": []
+    },
+    {
+      "route": "/hr/applicants",
+      "title": "Recruitment applicants",
+      "errors": []
+    },
+    {
+      "route": "/transport/vehicles",
+      "title": "Vehicles",
+      "errors": []
+    },
+    {
+      "route": "/transport/stops",
+      "title": "Routes & stops",
+      "errors": []
+    },
+    {
+      "route": "/transport/drivers",
+      "title": "Driver assignments",
+      "errors": []
+    },
+    {
+      "route": "/transport/trips",
+      "title": "Trips & boarding",
+      "errors": []
+    },
+    {
+      "route": "/transport/boarding",
+      "title": "Boarding register",
+      "errors": []
+    },
+    {
+      "route": "/transport/vehicle-maintenance",
+      "title": "Vehicle maintenance",
+      "errors": []
+    },
+    {
+      "route": "/transport/transport-alerts",
+      "title": "Transport alerts",
+      "errors": []
+    },
+    {
+      "route": "/library/books",
+      "title": "Book catalogue",
+      "errors": []
+    },
+    {
+      "route": "/library/copies",
+      "title": "Book copies",
+      "errors": []
+    },
+    {
+      "route": "/library/loans",
+      "title": "Circulation desk",
+      "errors": []
+    },
+    {
+      "route": "/library/reservations",
+      "title": "Book reservations",
+      "errors": []
+    },
+    {
+      "route": "/library/library-fines",
+      "title": "Library fines",
+      "errors": []
+    },
+    {
+      "route": "/inventory/vendors",
+      "title": "Vendors",
+      "errors": []
+    },
+    {
+      "route": "/inventory/items",
+      "title": "Items & stock",
+      "errors": []
+    },
+    {
+      "route": "/inventory/purchase-orders",
+      "title": "Purchase orders",
+      "errors": []
+    },
+    {
+      "route": "/inventory/stock-movements",
+      "title": "Stock movements",
+      "errors": []
+    },
+    {
+      "route": "/inventory/assets",
+      "title": "Asset register",
+      "errors": []
+    },
+    {
+      "route": "/hostel/beds",
+      "title": "Buildings, rooms & beds",
+      "errors": []
+    },
+    {
+      "route": "/hostel/hostel-allocations",
+      "title": "Hostel allocations",
+      "errors": []
+    },
+    {
+      "route": "/hostel/roll-call",
+      "title": "Hostel roll call",
+      "errors": []
+    },
+    {
+      "route": "/hostel/outpasses",
+      "title": "Outpass requests",
+      "errors": []
+    },
+    {
+      "route": "/hostel/hostel-visitors",
+      "title": "Hostel visitors",
+      "errors": []
+    },
+    {
+      "route": "/hostel/mess",
+      "title": "Mess menus",
+      "errors": []
+    },
+    {
+      "route": "/wellbeing/incidents",
+      "title": "Behaviour incidents",
+      "errors": []
+    },
+    {
+      "route": "/wellbeing/house-points",
+      "title": "House points & detentions",
+      "errors": []
+    },
+    {
+      "route": "/wellbeing/counselling",
+      "title": "Counselling cases",
+      "errors": []
+    },
+    {
+      "route": "/wellbeing/iep",
+      "title": "SEN / IEP plans",
+      "errors": []
+    },
+    {
+      "route": "/wellbeing/safeguarding",
+      "title": "Safeguarding cases",
+      "errors": []
+    },
+    {
+      "route": "/health/clinic",
+      "title": "Clinic visits",
+      "errors": []
+    },
+    {
+      "route": "/health/medication",
+      "title": "Medication log",
+      "errors": []
+    },
+    {
+      "route": "/health/immunisations",
+      "title": "Immunisations & checks",
+      "errors": []
+    },
+    {
+      "route": "/activities/clubs",
+      "title": "Clubs & teams",
+      "errors": []
+    },
+    {
+      "route": "/activities/activity-enrolments",
+      "title": "Activity enrolment",
+      "errors": []
+    },
+    {
+      "route": "/activities/trips-events",
+      "title": "Events & trips",
+      "errors": []
+    },
+    {
+      "route": "/activities/achievements",
+      "title": "Achievements",
+      "errors": []
+    },
+    {
+      "route": "/documents/document-requests",
+      "title": "Document requests",
+      "errors": []
+    },
+    {
+      "route": "/documents/document-register",
+      "title": "Document review register",
+      "errors": []
+    },
+    {
+      "route": "/documents/certificate-templates",
+      "title": "Certificate templates",
+      "errors": []
+    },
+    {
+      "route": "/learning/resources",
+      "title": "Learning resources",
+      "errors": []
+    },
+    {
+      "route": "/learning/live-classes",
+      "title": "Live classes",
+      "errors": []
+    },
+    {
+      "route": "/learning/quizzes",
+      "title": "Online quizzes",
+      "errors": []
+    },
+    {
+      "route": "/learning/quiz-attempts",
+      "title": "Quiz attempts",
+      "errors": []
+    },
+    {
+      "route": "/front-office/visitors",
+      "title": "Visitor desk",
+      "errors": []
+    },
+    {
+      "route": "/front-office/gate-passes",
+      "title": "Gate passes",
+      "errors": []
+    },
+    {
+      "route": "/front-office/appointments",
+      "title": "Office appointments",
+      "errors": []
+    },
+    {
+      "route": "/reports/saved-reports",
+      "title": "Report builder & saved views",
+      "errors": []
+    },
+    {
+      "route": "/reports/statutory",
+      "title": "Statutory export requests",
+      "errors": []
+    },
+    {
+      "route": "/settings/integrations",
+      "title": "Integrations & API configuration",
+      "errors": []
+    },
+    {
+      "route": "/settings/webhooks",
+      "title": "Webhook subscriptions",
+      "errors": []
+    },
+    {
+      "route": "/settings/modules",
+      "title": "Module configuration",
+      "errors": []
+    },
+    {
+      "route": "/settings/billing",
+      "title": "Subscription & usage",
+      "errors": []
+    },
+    {
+      "route": "/website/cms-pages",
+      "title": "Website pages",
+      "errors": []
+    },
+    {
+      "route": "/website/cms-news",
+      "title": "News & gallery",
+      "errors": []
+    },
+    {
+      "route": "/website/domains",
+      "title": "Domains & SEO",
+      "errors": []
+    },
+    {
+      "route": "/alumni/alumni",
+      "title": "Alumni & transcript requests",
+      "errors": []
+    },
+    {
+      "route": "/group/group-policies",
+      "title": "Group policy masters",
+      "errors": []
+    },
+    {
+      "route": "/platform/support-tickets",
+      "title": "Support tickets",
+      "errors": []
+    },
+    {
+      "route": "/platform/tenant-requests",
+      "title": "School provisioning",
+      "errors": []
+    },
+    {
+      "route": "/platform/plans",
+      "title": "Plans & feature flags",
+      "errors": []
+    },
+    {
+      "route": "/platform/support-grants",
+      "title": "Support access requests",
+      "errors": []
+    }
+  ],
+  "portalRoutes": [
+    {
+      "role": "teacher",
+      "route": "/teacher",
+      "title": "Welcome, Anita",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/classes",
+      "title": "Classes",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/attendance",
+      "title": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/timetable",
+      "title": "Timetable",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/homework",
+      "title": "Homework",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/submissions",
+      "title": "Submissions",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/lessons",
+      "title": "Lessons",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/marks",
+      "title": "Marks",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/resources",
+      "title": "Resources",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/messages",
+      "title": "Messages",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/leave",
+      "title": "Leave",
+      "errors": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/profile",
+      "title": "Profile",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal",
+      "title": "Welcome, Rahul",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/attendance",
+      "title": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/leave",
+      "title": "Leave",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/documents",
+      "title": "Documents",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/payroll",
+      "title": "Payroll",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/expenses",
+      "title": "Expenses",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/training",
+      "title": "Training",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/messages",
+      "title": "Messages",
+      "errors": []
+    },
+    {
+      "role": "staff",
+      "route": "/staff-portal/profile",
+      "title": "Profile",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent",
+      "title": "Welcome, Aarav’s",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/attendance",
+      "title": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/timetable",
+      "title": "Timetable",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/homework",
+      "title": "Homework",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/results",
+      "title": "Results",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/fees",
+      "title": "Fees",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/messages",
+      "title": "Messages",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/notices",
+      "title": "Notices",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/leave",
+      "title": "Leave",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/transport",
+      "title": "Transport",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/events",
+      "title": "Events",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/ptm",
+      "title": "Ptm",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/consents",
+      "title": "Consents",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/documents",
+      "title": "Documents",
+      "errors": []
+    },
+    {
+      "role": "parent",
+      "route": "/parent/profile",
+      "title": "Profile",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student",
+      "title": "Welcome, Aarav",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/attendance",
+      "title": "Attendance",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/timetable",
+      "title": "Timetable",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/homework",
+      "title": "Homework",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/results",
+      "title": "Results",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/fees",
+      "title": "Fees",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/notices",
+      "title": "Notices",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/library",
+      "title": "Library",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/activities",
+      "title": "Activities",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/requests",
+      "title": "Requests",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/learning",
+      "title": "Learning",
+      "errors": []
+    },
+    {
+      "role": "student",
+      "route": "/student/profile",
+      "title": "Profile",
+      "errors": []
+    },
+    {
+      "role": "driver",
+      "route": "/driver",
+      "title": "Welcome, School",
+      "errors": []
+    },
+    {
+      "role": "driver",
+      "route": "/driver/trips",
+      "title": "Trips",
+      "errors": []
+    },
+    {
+      "role": "driver",
+      "route": "/driver/boarding",
+      "title": "Boarding",
+      "errors": []
+    },
+    {
+      "role": "driver",
+      "route": "/driver/vehicles",
+      "title": "Vehicles",
+      "errors": []
+    },
+    {
+      "role": "driver",
+      "route": "/driver/alerts",
+      "title": "Alerts",
+      "errors": []
+    },
+    {
+      "role": "driver",
+      "route": "/driver/profile",
+      "title": "Profile",
+      "errors": []
+    }
+  ],
+  "legacyRoutes": [
+    {
+      "route": "/dashboard",
+      "title": [
+        "Good morning, Dr. Rajiv Sharma"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Good morning, Dr. Rajiv Sharma\nCampus Active\nSystem Audit Log\nQuick Notice\nAdd Academic Event\n\nSaturday, 17 Oct 2026 · D"
+    },
+    {
+      "route": "/dashboard/approvals",
+      "title": [
+        "Administrative Approvals Inbox"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Administrative Approvals Inbox\n\nCampus operations, approvals and the institutional calendar.\n\nAY 2026–27\nPersistent demo"
+    },
+    {
+      "route": "/dashboard/calendar",
+      "title": [
+        "Academic Calendar"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Academic Calendar\n\nCampus operations, approvals and the institutional calendar.\n\nAY 2026–27\nPersistent demo\n+ Add Academ"
+    },
+    {
+      "route": "/dashboard/calendar/new",
+      "title": [
+        "Add Academic Event"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Add Academic Event\n\nCampus operations, approvals and the institutional calendar.\n\nAY 2026–27\nPersistent demo\nAdd academi"
+    },
+    {
+      "route": "/audit",
+      "title": [
+        "System Audit & Compliance Log"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "System Audit & Compliance Log\n\nCampus operations, approvals and the institutional calendar.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/admissions",
+      "title": [],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Admissions Management Hub\n\nTrack prospective candidates across the admissions lifecycle from enquiry intake to seat allo"
+    },
+    {
+      "route": "/admissions/inquiries",
+      "title": [
+        "Prospective Student Inquiries Desk"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Prospective Student Inquiries Desk\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nA"
+    },
+    {
+      "route": "/admissions/inquiries/new",
+      "title": [
+        "Log New Enquiry"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Log New Enquiry\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026–27\nPersisten"
+    },
+    {
+      "route": "/admissions/public-form",
+      "title": [
+        "Public Admission Form & QR Portal"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Public Admission Form & QR Portal\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY"
+    },
+    {
+      "route": "/admissions/form-builder",
+      "title": [
+        "Online Admission Form Builder"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Online Admission Form Builder\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 202"
+    },
+    {
+      "route": "/admissions/applications",
+      "title": [
+        "Applications"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Applications\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026–27\nPersistent d"
+    },
+    {
+      "route": "/admissions/assessments",
+      "title": [
+        "Tests & Interviews"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Tests & Interviews\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026–27\nPersis"
+    },
+    {
+      "route": "/admissions/seats",
+      "title": [
+        "Seats & Waitlists"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Seats & Waitlists\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026–27\nPersist"
+    },
+    {
+      "route": "/admissions/offers",
+      "title": [
+        "Offers & Enrolment"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Offers & Enrolment\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026–27\nPersis"
+    },
+    {
+      "route": "/admissions/reenrolment",
+      "title": [
+        "Re-enrolment"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Re-enrolment\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026–27\nPersistent d"
+    },
+    {
+      "route": "/admissions/analytics",
+      "title": [
+        "Admissions Conversion Funnel"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Admissions Conversion Funnel\n\nTrack prospective candidates from enquiry intake to seat allotment and enrolment.\n\nAY 2026"
+    },
+    {
+      "route": "/students",
+      "title": [
+        "Students & Guardians Hub"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Students & Guardians Hub\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent"
+    },
+    {
+      "route": "/students/new",
+      "title": [
+        "Enroll New Student"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Enroll New Student\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/students/profile",
+      "title": [
+        "Student Profile"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Student Profile\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent demo\nA\nA"
+    },
+    {
+      "route": "/students/guardians",
+      "title": [
+        "Guardians & Emergency Contacts"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Guardians & Emergency Contacts\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPers"
+    },
+    {
+      "route": "/students/import",
+      "title": [
+        "Import & Migration"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Import & Migration\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/students/promotions",
+      "title": [
+        "Promotion & Transfers"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Promotion & Transfers\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent de"
+    },
+    {
+      "route": "/students/id-cards",
+      "title": [
+        "ID Cards & Barcodes"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "ID Cards & Barcodes\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent demo"
+    },
+    {
+      "route": "/students/certificates",
+      "title": [
+        "Certificates & TC"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Certificates & TC\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent demo\nS"
+    },
+    {
+      "route": "/students/merge",
+      "title": [
+        "Review & Merge"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Review & Merge\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent demo\nStud"
+    },
+    {
+      "route": "/students/transport",
+      "title": [
+        "Bus Route Management"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Bus Route Management\n\nMaster student roster, guardian links, documents and cohort lifecycles.\n\nAY 2026–27\nPersistent dem"
+    },
+    {
+      "route": "/staff",
+      "title": [
+        "Staff & HR Hub"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Staff & HR Hub\n\nFaculty roster, role permissions, documentation and teaching allocations.\n\nAY 2026–27\nPersistent demo\nSt"
+    },
+    {
+      "route": "/staff/new",
+      "title": [
+        "Onboard Staff"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Onboard Staff\n\nFaculty roster, role permissions, documentation and teaching allocations.\n\nAY 2026–27\nPersistent demo\nSta"
+    },
+    {
+      "route": "/staff/profile",
+      "title": [
+        "Staff Profile"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Staff Profile\n\nFaculty roster, role permissions, documentation and teaching allocations.\n\nAY 2026–27\nPersistent demo\nD\nD"
+    },
+    {
+      "route": "/staff/roles",
+      "title": [
+        "Roles & Permissions"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Roles & Permissions\n\nFaculty roster, role permissions, documentation and teaching allocations.\n\nAY 2026–27\nPersistent de"
+    },
+    {
+      "route": "/staff/allocations",
+      "title": [
+        "Class & Subject Allocation"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Class & Subject Allocation\n\nFaculty roster, role permissions, documentation and teaching allocations.\n\nAY 2026–27\nPersis"
+    },
+    {
+      "route": "/staff/documentation",
+      "title": [
+        "Complete Documentation"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Complete Documentation\n\nFaculty roster, role permissions, documentation and teaching allocations.\n\nAY 2026–27\nPersistent"
+    },
+    {
+      "route": "/attendance",
+      "title": [
+        "Daily Attendance Hub"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Daily Attendance Hub\n\nDaily registers, period attendance, leave decisions and coverage.\n\nAY 2026–27\nPersistent demo\nDail"
+    },
+    {
+      "route": "/attendance/periods",
+      "title": [
+        "Period-wise Attendance"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Period-wise Attendance\n\nDaily registers, period attendance, leave decisions and coverage.\n\nAY 2026–27\nPersistent demo\nDa"
+    },
+    {
+      "route": "/attendance/leave",
+      "title": [
+        "Leave Requests"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Leave Requests\n\nDaily registers, period attendance, leave decisions and coverage.\n\nAY 2026–27\nPersistent demo\nDaily Atte"
+    },
+    {
+      "route": "/attendance/staff",
+      "title": [
+        "Staff Attendance"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Staff Attendance\n\nDaily registers, period attendance, leave decisions and coverage.\n\nAY 2026–27\nPersistent demo\nDaily At"
+    },
+    {
+      "route": "/timetable",
+      "title": [],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Master Timetable & Scheduling Hub\n\nAY 2026–27 · Published\n\nClass schedules, daily teacher substitutions, and facility ro"
+    },
+    {
+      "route": "/timetable/builder",
+      "title": [
+        "Create / Edit Timetable"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Create / Edit Timetable\n\nClass schedules, teacher availability and room conflict checks.\n\nAY 2026–27\nPersistent demo\nMas"
+    },
+    {
+      "route": "/timetable/substitutions",
+      "title": [
+        "Proxy & Faculty Substitution"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Proxy & Faculty Substitution\n\nClass schedules, teacher availability and room conflict checks.\n\nAY 2026–27\nPersistent dem"
+    },
+    {
+      "route": "/academics",
+      "title": [
+        "Academics & Homework Hub"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Academics & Homework Hub\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent de"
+    },
+    {
+      "route": "/academics/subjects",
+      "title": [
+        "Subjects & Faculty"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Subjects & Faculty\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent demo\nHom"
+    },
+    {
+      "route": "/academics/syllabus",
+      "title": [
+        "Syllabus & Curriculum"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Syllabus & Curriculum\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/academics/lessons",
+      "title": [
+        "Lesson Plans"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Lesson Plans\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent demo\nHomework "
+    },
+    {
+      "route": "/academics/lessons/new",
+      "title": [
+        "Create Lesson Plan"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Create Lesson Plan\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent demo\nCre"
+    },
+    {
+      "route": "/academics/homework/new",
+      "title": [
+        "Create & Assign Homework"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Create & Assign Homework\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent de"
+    },
+    {
+      "route": "/academics/submissions",
+      "title": [
+        "Homework Submissions"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Homework Submissions\n\nCurriculum progress, lesson plans, homework and student submissions.\n\nAY 2026–27\nPersistent demo\nF"
+    },
+    {
+      "route": "/exams",
+      "title": [
+        "Exams & Results"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Exams & Results\n\nExam cycles, paper schedules, marks and report cards.\n\nAY 2026–27\nPersistent demo\n+ Create Exam Cycle\nM"
+    },
+    {
+      "route": "/exams/new",
+      "title": [
+        "Create Exam Cycle"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Create Exam Cycle\n\nExam cycles, paper schedules, marks and report cards.\n\nAY 2026–27\nPersistent demo\nCreate exam cycle\nE"
+    },
+    {
+      "route": "/exams/marks",
+      "title": [
+        "Marks Entry & Report Cards"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Marks Entry & Report Cards\n\nExam cycles, paper schedules, marks and report cards.\n\nAY 2026–27\nPersistent demo\n+ Create E"
+    },
+    {
+      "route": "/fees",
+      "title": [
+        "Fees & Payments Hub"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Fees & Payments Hub\n\nInvoices, fee balances, simulated collections and printable receipts.\n\nAY 2026–27\nPersistent demo\n+"
+    },
+    {
+      "route": "/fees/invoices",
+      "title": [
+        "Invoice Ledger"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Invoice Ledger\n\nInvoices, fee balances, simulated collections and printable receipts.\n\nAY 2026–27\nPersistent demo\n+ Gene"
+    },
+    {
+      "route": "/fees/collect",
+      "title": [
+        "Collect Payment"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Collect Payment\n\nInvoices, fee balances, simulated collections and printable receipts.\n\nAY 2026–27\nPersistent demo\nINV-2"
+    },
+    {
+      "route": "/communication",
+      "title": [
+        "Communication & Reports Hub"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Communication & Reports Hub\n\nSchool notices, simulated delivery, acknowledgments and standard reports.\n\nAY 2026–27\nPersi"
+    },
+    {
+      "route": "/communication/new",
+      "title": [
+        "Quick Notice"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Quick Notice\n\nSchool notices, simulated delivery, acknowledgments and standard reports.\n\nAY 2026–27\nPersistent demo\nNoti"
+    },
+    {
+      "route": "/reports",
+      "title": [
+        "Standard Reports"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Standard Reports\n\nSchool notices, simulated delivery, acknowledgments and standard reports.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/settings",
+      "title": [],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Settings\n\nMaster Console · Active AY 2026–27\n\nInstitutional parameters, academic term schedules, class capacity matrix, "
+    },
+    {
+      "route": "/settings/year-end",
+      "title": [
+        "Year-End Rollover"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Year-End Rollover\n\nInstitutional configuration, academic years, preferences and governance.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/profile",
+      "title": [
+        "Principal Profile"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Principal Profile\n\nInstitutional configuration, academic years, preferences and governance.\n\nAY 2026–27\nPersistent demo\n"
+    },
+    {
+      "route": "/notifications",
+      "title": [
+        "Notifications & Alerts"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Notifications & Alerts\n\nInstitutional configuration, academic years, preferences and governance.\n\nAY 2026–27\nPersistent "
+    },
+    {
+      "route": "/support",
+      "title": [
+        "Support Desk"
+      ],
+      "errors": [],
+      "rendered": true,
+      "contentPreview": "Support Desk\n\nInstitutional configuration, academic years, preferences and governance.\n\nAY 2026–27\nPersistent demo\nUsing"
+    }
+  ],
+  "accountAndSetupRoutes": [
+    {
+      "route": "/settings/users",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/settings/invitations",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/account/security",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/account/sessions",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/select-school",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/select-role",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/school-profile",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/academic-terms",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/classes-sections",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/bell-schedule",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/fee-structure",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/staff-allocations",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/data-ingestion",
+      "rendered": true,
+      "errors": []
+    },
+    {
+      "route": "/school-setup/portal-gateway",
+      "rendered": true,
+      "errors": []
+    }
+  ],
+  "publicRoutes": [
+    {
+      "route": "/welcome",
+      "rendered": true,
+      "title": [
+        "One connected workspace for your school"
+      ]
+    },
+    {
+      "route": "/welcome/features",
+      "rendered": true,
+      "title": [
+        "Every school day, connected"
+      ]
+    },
+    {
+      "route": "/welcome/pricing",
+      "rendered": true,
+      "title": [
+        "Plans for your school"
+      ]
+    },
+    {
+      "route": "/welcome/demo",
+      "rendered": true,
+      "title": [
+        "Request a school demo"
+      ]
+    },
+    {
+      "route": "/welcome/signup",
+      "rendered": true,
+      "title": [
+        "Start your school workspace"
+      ]
+    },
+    {
+      "route": "/welcome/security",
+      "rendered": true,
+      "title": [
+        "Security & data access"
+      ]
+    },
+    {
+      "route": "/welcome/partners",
+      "rendered": true,
+      "title": [
+        "Partner enquiries"
+      ]
+    },
+    {
+      "route": "/welcome/help",
+      "rendered": true,
+      "title": [
+        "Help centre"
+      ]
+    },
+    {
+      "route": "/welcome/status",
+      "rendered": true,
+      "title": [
+        "Service status"
+      ]
+    },
+    {
+      "route": "/welcome/blog",
+      "rendered": true,
+      "title": [
+        "Product updates"
+      ]
+    },
+    {
+      "route": "/welcome/careers",
+      "rendered": true,
+      "title": [
+        "Join the team"
+      ]
+    },
+    {
+      "route": "/welcome/privacy",
+      "rendered": true,
+      "title": [
+        "Privacy notice"
+      ]
+    },
+    {
+      "route": "/welcome/terms",
+      "rendered": true,
+      "title": [
+        "Terms of service"
+      ]
+    },
+    {
+      "route": "/school-site",
+      "rendered": true,
+      "title": [
+        "Greenfield International School"
+      ]
+    },
+    {
+      "route": "/school-site/admissions",
+      "rendered": true,
+      "title": []
+    },
+    {
+      "route": "/verify-certificate",
+      "rendered": true,
+      "title": [
+        "Verify demo certificate"
+      ]
+    },
+    {
+      "route": "/forgot-password",
+      "rendered": true,
+      "title": [
+        "Reset your password"
+      ]
+    },
+    {
+      "route": "/reset-password",
+      "rendered": true,
+      "title": [
+        "Choose a new password"
+      ]
+    },
+    {
+      "route": "/accept-invitation",
+      "rendered": true,
+      "title": [
+        "Join your school workspace"
+      ]
+    },
+    {
+      "route": "/verify-email",
+      "rendered": true,
+      "title": [
+        "Email verification"
+      ]
+    },
+    {
+      "route": "/auth/confirm",
+      "rendered": true,
+      "title": [
+        "Authentication callback"
+      ]
+    },
+    {
+      "route": "/mfa/enroll",
+      "rendered": true,
+      "title": [
+        "Set up an authenticator"
+      ]
+    },
+    {
+      "route": "/mfa/challenge",
+      "rendered": true,
+      "title": [
+        "Verify your sign-in"
+      ]
+    }
+  ],
+  "verification": {
+    "automatedTests": 68,
+    "controlBindings": 354,
+    "unboundControls": 0,
+    "build": "passed",
+    "typecheck": "passed"
+  }
+}

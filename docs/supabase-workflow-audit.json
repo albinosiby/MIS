@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-18T05:42:44.584Z",
+  "project": "https://fxtlcapsytqyzsgcbcvp.supabase.co",
+  "checks": [
+    {
+      "case": "admin real Auth sign-in",
+      "passed": true
+    },
+    {
+      "case": "admin own membership through RLS",
+      "passed": true
+    },
+    {
+      "case": "teacher real Auth sign-in",
+      "passed": true
+    },
+    {
+      "case": "teacher own membership through RLS",
+      "passed": true
+    },
+    {
+      "case": "staff real Auth sign-in",
+      "passed": true
+    },
+    {
+      "case": "staff own membership through RLS",
+      "passed": true
+    },
+    {
+      "case": "parent real Auth sign-in",
+      "passed": true
+    },
+    {
+      "case": "parent own membership through RLS",
+      "passed": true
+    },
+    {
+      "case": "student real Auth sign-in",
+      "passed": true
+    },
+    {
+      "case": "student own membership through RLS",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot download canonical workspace directly",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot call privileged write RPC",
+      "passed": true
+    },
+    {
+      "case": "Parent RLS hides other memberships",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot promote own role",
+      "passed": true
+    },
+    {
+      "case": "Teacher assignment saved",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Teacher assignment saved persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Student answer saved",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Student answer saved persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Teacher feedback saved",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Teacher feedback saved persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Parent projection receives score and feedback",
+      "passed": true
+    },
+    {
+      "case": "Staff expense draft saved",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Staff expense draft saved persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Staff claim submitted",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Staff claim submitted persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Staff self-approval rejected",
+      "passed": true
+    },
+    {
+      "case": "Admin approves staff claim",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Admin approves staff claim persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Staff projection receives school decision",
+      "passed": true
+    },
+    {
+      "case": "Parent leave request saved",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Parent leave request saved persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Admin leave approval persisted",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Admin leave approval persisted persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Teacher attendance respects approved leave",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Teacher attendance respects approved leave persisted revision",
+      "passed": true
+    },
+    {
+      "case": "Parent receives excused attendance",
+      "passed": true
+    },
+    {
+      "case": "Unrelated child command rejected",
+      "passed": true
+    },
+    {
+      "case": "Foreign school projection rejected",
+      "passed": true
+    },
+    {
+      "case": "Canonical database read",
+      "passed": true
+    },
+    {
+      "case": "Database CAS rejects stale writer",
+      "passed": true
+    },
+    {
+      "case": "Database prevents disabling final admin",
+      "passed": true
+    },
+    {
+      "case": "Parent projection contains only permitted student",
+      "passed": true
+    },
+    {
+      "case": "Parent receives no staff dossiers or audit ledger",
+      "passed": true
+    },
+    {
+      "case": "Authenticated session is recognised",
+      "passed": true
+    },
+    {
+      "case": "Global sign-out invalidates session lookup",
+      "passed": true
+    }
+  ],
+  "passed": 55,
+  "failed": 0,
+  "revision": 29,
+  "scope": "Real Auth and RLS requests plus server-domain workflows committed to the remote database; browser scenarios are recorded separately."
+}

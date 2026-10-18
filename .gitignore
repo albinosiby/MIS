@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+coverage/
+playwright-report/
+test-results/
+
+# Synthetic local authentication store
+/.local/
+
+# Supabase CLI local linkage and transient credentials
+/supabase/.temp/

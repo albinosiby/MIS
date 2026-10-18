@@ -1,0 +1,139 @@
+{
+  "checkedAt": "2026-10-18T10:03:49.598Z",
+  "passed": 33,
+  "total": 33,
+  "checks": [
+    {
+      "case": "admin existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "admin original membership",
+      "passed": true
+    },
+    {
+      "case": "teacher existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "teacher original membership",
+      "passed": true
+    },
+    {
+      "case": "parent existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "parent original membership",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot manage admissions",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot manage admissions",
+      "passed": true
+    },
+    {
+      "case": "Administrator creates an inquiry",
+      "passed": true
+    },
+    {
+      "case": "Details cannot forge an offer",
+      "passed": true
+    },
+    {
+      "case": "Application progresses to contacted",
+      "passed": true
+    },
+    {
+      "case": "Application progresses to application",
+      "passed": true
+    },
+    {
+      "case": "Application progresses to assessment",
+      "passed": true
+    },
+    {
+      "case": "Offer requires assessment score",
+      "passed": true
+    },
+    {
+      "case": "Administrator records assessment and offer expiry",
+      "passed": true
+    },
+    {
+      "case": "Assessed applicant receives an offer",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot enroll applicants",
+      "passed": true
+    },
+    {
+      "case": "Document checklist cannot replace a private uploaded file",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot upload another applicant's private file",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot upload an unrelated application file",
+      "passed": true
+    },
+    {
+      "case": "Administrator uploads a private application file",
+      "passed": true
+    },
+    {
+      "case": "Application upload is ready and hides its storage path",
+      "passed": true
+    },
+    {
+      "case": "Administrator downloads the private application PDF",
+      "passed": true
+    },
+    {
+      "case": "Unrelated parent cannot download application bytes",
+      "passed": true
+    },
+    {
+      "case": "Administrator enrolls accepted applicant",
+      "passed": true
+    },
+    {
+      "case": "Issued revoked contents are absent from admin page projection",
+      "passed": true
+    },
+    {
+      "case": "Application links to a persistent student",
+      "passed": true
+    },
+    {
+      "case": "Guardian relationship and student profile persist",
+      "passed": true
+    },
+    {
+      "case": "Admission invoice is dated and linked",
+      "passed": true
+    },
+    {
+      "case": "Enrollment timeline is saved",
+      "passed": true
+    },
+    {
+      "case": "Enrollment retry cannot create another student",
+      "passed": true
+    },
+    {
+      "case": "Existing students retain their IDs",
+      "passed": true
+    },
+    {
+      "case": "Existing staff retain their IDs",
+      "passed": true
+    }
+  ]
+}

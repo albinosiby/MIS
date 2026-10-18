@@ -1,0 +1,15 @@
+import type { z } from "zod";
+import type { contractsRequestSchema } from "../schemas/operations.schema.ts";
+export type ContractsRequest = z.infer<typeof contractsRequestSchema>;
+import type { payrollRequestSchema } from "../schemas/operations.schema.ts";
+export type PayrollRequest = z.infer<typeof payrollRequestSchema>;
+import type { expensesRequestSchema } from "../schemas/operations.schema.ts";
+export type ExpensesRequest = z.infer<typeof expensesRequestSchema>;
+import type { appraisalsRequestSchema } from "../schemas/operations.schema.ts";
+export type AppraisalsRequest = z.infer<typeof appraisalsRequestSchema>;
+import type { trainingRequestSchema } from "../schemas/operations.schema.ts";
+export type TrainingRequest = z.infer<typeof trainingRequestSchema>;
+import type { vacanciesRequestSchema } from "../schemas/operations.schema.ts";
+export type VacanciesRequest = z.infer<typeof vacanciesRequestSchema>;
+import type { applicantsRequestSchema } from "../schemas/operations.schema.ts";
+export type ApplicantsRequest = z.infer<typeof applicantsRequestSchema>;

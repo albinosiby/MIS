@@ -1,0 +1,216 @@
+import type { z } from "zod";
+import {
+  purchasePaymentsRequestSchema,
+  paymentAttemptsRequestSchema,
+  refundsRequestSchema,
+  reconciliationRequestSchema,
+  journalsRequestSchema,
+  paymentPlansRequestSchema,
+  receiptTemplatesRequestSchema,
+  gatewaysRequestSchema,
+} from "../../fees/schemas/operations.schema.ts";
+import {
+  gradingScalesRequestSchema,
+  reportTemplatesRequestSchema,
+  moderationRequestSchema,
+  seatingRequestSchema,
+  reEvaluationsRequestSchema,
+} from "../../exams/schemas/operations.schema.ts";
+import {
+  messageTemplatesRequestSchema,
+  messagesRequestSchema,
+  deliveriesRequestSchema,
+  ptmRequestSchema,
+  surveysRequestSchema,
+  consentsRequestSchema,
+} from "../../communication/schemas/operations.schema.ts";
+import {
+  contractsRequestSchema,
+  payrollRequestSchema,
+  expensesRequestSchema,
+  appraisalsRequestSchema,
+  trainingRequestSchema,
+  vacanciesRequestSchema,
+  applicantsRequestSchema,
+} from "../../hr/schemas/operations.schema.ts";
+import {
+  transportAllocationsRequestSchema,
+  vehiclesRequestSchema,
+  stopsRequestSchema,
+  driversRequestSchema,
+  tripsRequestSchema,
+  boardingRequestSchema,
+  vehicleMaintenanceRequestSchema,
+  transportAlertsRequestSchema,
+} from "../../transport/schemas/operations.schema.ts";
+import {
+  booksRequestSchema,
+  copiesRequestSchema,
+  loansRequestSchema,
+  reservationsRequestSchema,
+  libraryFinesRequestSchema,
+} from "../../library/schemas/operations.schema.ts";
+import {
+  purchaseReceiptsRequestSchema,
+  vendorsRequestSchema,
+  itemsRequestSchema,
+  purchaseOrdersRequestSchema,
+  stockMovementsRequestSchema,
+  assetsRequestSchema,
+} from "../../inventory/schemas/operations.schema.ts";
+import {
+  bedsRequestSchema,
+  hostelAllocationsRequestSchema,
+  rollCallRequestSchema,
+  outpassesRequestSchema,
+  hostelVisitorsRequestSchema,
+  messRequestSchema,
+} from "../../hostel/schemas/operations.schema.ts";
+import {
+  incidentsRequestSchema,
+  housePointsRequestSchema,
+  counsellingRequestSchema,
+  iepRequestSchema,
+  safeguardingRequestSchema,
+} from "../../wellbeing/schemas/operations.schema.ts";
+import {
+  clinicRequestSchema,
+  medicationRequestSchema,
+  immunisationsRequestSchema,
+} from "../../health/schemas/operations.schema.ts";
+import {
+  clubsRequestSchema,
+  activityEnrolmentsRequestSchema,
+  tripsEventsRequestSchema,
+  achievementsRequestSchema,
+} from "../../activities/schemas/operations.schema.ts";
+import {
+  documentRequestsRequestSchema,
+  documentRegisterRequestSchema,
+  certificateTemplatesRequestSchema,
+} from "../../documents/schemas/operations.schema.ts";
+import {
+  resourcesRequestSchema,
+  liveClassesRequestSchema,
+  quizzesRequestSchema,
+  quizAttemptsRequestSchema,
+} from "../../learning/schemas/operations.schema.ts";
+import {
+  visitorsRequestSchema,
+  gatePassesRequestSchema,
+  appointmentsRequestSchema,
+} from "../../front-office/schemas/operations.schema.ts";
+import {
+  savedReportsRequestSchema,
+  statutoryRequestSchema,
+} from "../../reports/schemas/operations.schema.ts";
+import {
+  integrationsRequestSchema,
+  webhooksRequestSchema,
+  modulesRequestSchema,
+  billingRequestSchema,
+} from "../../settings/schemas/operations.schema.ts";
+import {
+  cmsPagesRequestSchema,
+  cmsNewsRequestSchema,
+  domainsRequestSchema,
+} from "../../website/schemas/operations.schema.ts";
+import {
+  supportTicketsRequestSchema,
+  tenantRequestsRequestSchema,
+  plansRequestSchema,
+  supportGrantsRequestSchema,
+} from "../../admin/schemas/operations.schema.ts";
+import { groupPoliciesRequestSchema } from "../../group/schemas/operations.schema.ts";
+import { alumniRequestSchema } from "../../alumni/schemas/operations.schema.ts";
+/** Whole-workspace validation registry; individual screens/adapters can import exact feature schemas. */
+export const operationRequests: Record<string, z.ZodType> = {
+  "purchase-payments":purchasePaymentsRequestSchema,
+  "payment-attempts": paymentAttemptsRequestSchema,
+  refunds: refundsRequestSchema,
+  reconciliation: reconciliationRequestSchema,
+  journals: journalsRequestSchema,
+  "payment-plans": paymentPlansRequestSchema,
+  "receipt-templates": receiptTemplatesRequestSchema,
+  gateways: gatewaysRequestSchema,
+  "grading-scales": gradingScalesRequestSchema,
+  "report-templates": reportTemplatesRequestSchema,
+  moderation: moderationRequestSchema,
+  seating: seatingRequestSchema,
+  "re-evaluations": reEvaluationsRequestSchema,
+  "message-templates": messageTemplatesRequestSchema,
+  messages: messagesRequestSchema,
+  deliveries: deliveriesRequestSchema,
+  ptm: ptmRequestSchema,
+  surveys: surveysRequestSchema,
+  consents: consentsRequestSchema,
+  contracts: contractsRequestSchema,
+  payroll: payrollRequestSchema,
+  expenses: expensesRequestSchema,
+  appraisals: appraisalsRequestSchema,
+  training: trainingRequestSchema,
+  vacancies: vacanciesRequestSchema,
+  applicants: applicantsRequestSchema,
+  "transport-allocations": transportAllocationsRequestSchema,
+  vehicles: vehiclesRequestSchema,
+  stops: stopsRequestSchema,
+  drivers: driversRequestSchema,
+  trips: tripsRequestSchema,
+  boarding: boardingRequestSchema,
+  "vehicle-maintenance": vehicleMaintenanceRequestSchema,
+  "transport-alerts": transportAlertsRequestSchema,
+  books: booksRequestSchema,
+  copies: copiesRequestSchema,
+  loans: loansRequestSchema,
+  reservations: reservationsRequestSchema,
+  "library-fines": libraryFinesRequestSchema,
+  "purchase-receipts":purchaseReceiptsRequestSchema,
+  vendors: vendorsRequestSchema,
+  items: itemsRequestSchema,
+  "purchase-orders": purchaseOrdersRequestSchema,
+  "stock-movements": stockMovementsRequestSchema,
+  assets: assetsRequestSchema,
+  beds: bedsRequestSchema,
+  "hostel-allocations": hostelAllocationsRequestSchema,
+  "roll-call": rollCallRequestSchema,
+  outpasses: outpassesRequestSchema,
+  "hostel-visitors": hostelVisitorsRequestSchema,
+  mess: messRequestSchema,
+  incidents: incidentsRequestSchema,
+  "house-points": housePointsRequestSchema,
+  counselling: counsellingRequestSchema,
+  iep: iepRequestSchema,
+  safeguarding: safeguardingRequestSchema,
+  clinic: clinicRequestSchema,
+  medication: medicationRequestSchema,
+  immunisations: immunisationsRequestSchema,
+  clubs: clubsRequestSchema,
+  "activity-enrolments": activityEnrolmentsRequestSchema,
+  "trips-events": tripsEventsRequestSchema,
+  achievements: achievementsRequestSchema,
+  "document-requests": documentRequestsRequestSchema,
+  "document-register": documentRegisterRequestSchema,
+  "certificate-templates": certificateTemplatesRequestSchema,
+  resources: resourcesRequestSchema,
+  "live-classes": liveClassesRequestSchema,
+  quizzes: quizzesRequestSchema,
+  "quiz-attempts": quizAttemptsRequestSchema,
+  visitors: visitorsRequestSchema,
+  "gate-passes": gatePassesRequestSchema,
+  appointments: appointmentsRequestSchema,
+  "saved-reports": savedReportsRequestSchema,
+  statutory: statutoryRequestSchema,
+  integrations: integrationsRequestSchema,
+  webhooks: webhooksRequestSchema,
+  modules: modulesRequestSchema,
+  billing: billingRequestSchema,
+  "cms-pages": cmsPagesRequestSchema,
+  "cms-news": cmsNewsRequestSchema,
+  domains: domainsRequestSchema,
+  "support-tickets": supportTicketsRequestSchema,
+  "tenant-requests": tenantRequestsRequestSchema,
+  plans: plansRequestSchema,
+  "support-grants": supportGrantsRequestSchema,
+  "group-policies": groupPoliciesRequestSchema,
+  alumni: alumniRequestSchema,
+};

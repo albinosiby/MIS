@@ -1,0 +1,340 @@
+{
+  "at": "2026-10-18T14:00:51.592Z",
+  "checks": [
+    {
+      "case": "isolated operator Auth created",
+      "passed": true
+    },
+    {
+      "case": "isolated operator grant created",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-operator",
+      "passed": true
+    },
+    {
+      "case": "anonymous cannot list institutions",
+      "passed": true
+    },
+    {
+      "case": "platform institution-create HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "registration returns reserved institution",
+      "passed": true
+    },
+    {
+      "case": "platform institution-create HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "registration retry is idempotent",
+      "passed": true
+    },
+    {
+      "case": "fresh canonical persisted",
+      "passed": true
+    },
+    {
+      "case": "fresh school has no seed students or transactions",
+      "passed": true
+    },
+    {
+      "case": "platform institution-create HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "registration returns reserved institution",
+      "passed": true
+    },
+    {
+      "case": "platform institution-create HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "registration retry is idempotent",
+      "passed": true
+    },
+    {
+      "case": "fresh canonical persisted",
+      "passed": true
+    },
+    {
+      "case": "fresh school has no seed students or transactions",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-admin-0",
+      "passed": true
+    },
+    {
+      "case": "temporary-password session cannot access data",
+      "passed": true
+    },
+    {
+      "case": "activation page opens",
+      "passed": true
+    },
+    {
+      "case": "password activation accepts recipient password",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-admin-0",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-admin-1",
+      "passed": true
+    },
+    {
+      "case": "second school activates",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-admin-1",
+      "passed": true
+    },
+    {
+      "case": "fresh setup screen loads",
+      "passed": true
+    },
+    {
+      "case": "school administrator cannot list platform institutions",
+      "passed": true
+    },
+    {
+      "case": "school administrator cannot elevate via platform commands",
+      "passed": true
+    },
+    {
+      "case": "school submits support",
+      "passed": true
+    },
+    {
+      "case": "duplicate support request idempotent",
+      "passed": true
+    },
+    {
+      "case": "support rejects forged school",
+      "passed": true
+    },
+    {
+      "case": "other school cannot read ticket",
+      "passed": true
+    },
+    {
+      "case": "request reaches platform queue",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 409",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "school history omits internal notes/manual logs",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "platform ticket-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "platform account-create HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-staff",
+      "passed": true
+    },
+    {
+      "case": "new staff must activate",
+      "passed": true
+    },
+    {
+      "case": "staff activates",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-staff",
+      "passed": true
+    },
+    {
+      "case": "platform account-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "disabled staff existing session denied",
+      "passed": true
+    },
+    {
+      "case": "platform account-update HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "reactivated staff can access support",
+      "passed": true
+    },
+    {
+      "case": "platform account-update HTTP 403",
+      "passed": true
+    },
+    {
+      "case": "platform account-update HTTP 403",
+      "passed": true
+    },
+    {
+      "case": "platform account-create HTTP 400",
+      "passed": true
+    },
+    {
+      "case": "platform account-create HTTP 403",
+      "passed": true
+    },
+    {
+      "case": "existing account is not overwritten",
+      "passed": true
+    },
+    {
+      "case": "platform inspects selected institution without impersonation",
+      "passed": true
+    },
+    {
+      "case": "new school uploads private document",
+      "passed": true
+    },
+    {
+      "case": "platform downloads selected school private document",
+      "passed": true
+    },
+    {
+      "case": "platform download rejects wrong institution",
+      "passed": true
+    },
+    {
+      "case": "school user cannot use platform download",
+      "passed": true
+    },
+    {
+      "case": "platform institution-status HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "suspension blocks existing school session",
+      "passed": true
+    },
+    {
+      "case": "other institution remains active",
+      "passed": true
+    },
+    {
+      "case": "operator still inspects suspended institution",
+      "passed": true
+    },
+    {
+      "case": "platform institution-status HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "reactivation restores school session",
+      "passed": true
+    },
+    {
+      "case": "platform account-reset HTTP 200",
+      "passed": true
+    },
+    {
+      "case": "reset revokes old session",
+      "passed": true
+    },
+    {
+      "case": "fresh account signs in: qa-59b33fab-staff",
+      "passed": true
+    },
+    {
+      "case": "reset account requires new password",
+      "passed": true
+    },
+    {
+      "case": "unsafe origin blocked",
+      "passed": true
+    },
+    {
+      "case": "isolated operator revoke saved",
+      "passed": true
+    },
+    {
+      "case": "revoked operator existing session denied",
+      "passed": true
+    },
+    {
+      "case": "foreign-school person rejected before Auth creation",
+      "passed": true
+    },
+    {
+      "case": "invalid person did not create orphan Auth account",
+      "passed": true
+    },
+    {
+      "case": "unknown institution rejected before Auth creation",
+      "passed": true
+    },
+    {
+      "case": "family account requires linked person",
+      "passed": true
+    },
+    {
+      "case": "provisioning recovery projection contains no temporary password",
+      "passed": true
+    }
+  ],
+  "existingAccountsModified": false,
+  "fixtureCleanup": "Completed; isolated accounts and institutions removed",
+  "browserAcceptance": {
+    "freshDashboardEmpty": true,
+    "setupProfileFormSaved": true,
+    "setupCompletionPersisted": 1,
+    "registryNameSynchronized": true,
+    "privateSupportNoteSavedAndReloaded": true,
+    "supportSubmissionSaved": true,
+    "institutionAndPersonNameSelectorsVerified": true
+  },
+  "cleanupSummary": {
+    "remainingAcceptanceAuthUsers": 0,
+    "platformOperators": 0,
+    "preservedInstitutions": 1,
+    "preservedSchoolMemberships": 5,
+    "orphanSupportEvents": 0,
+    "orphanDocumentEvents": 0,
+    "temporaryCredentialsFileDeleted": true
+  },
+  "localVerification": {
+    "automatedTestsPassed": 164,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "localHealth": "passed",
+    "anonymousPlatformAccess": "denied"
+  }
+}

@@ -1,0 +1,176 @@
+import type { ModuleDefinition } from "../../operations/models/definitions.ts";
+export const forms: ModuleDefinition[] = [
+  {
+    kind: "beds",
+    area: "hostel",
+    title: "Buildings, rooms & beds",
+    description: "Maintain individual bed capacity and location.",
+    fields: [
+      {
+        name: "building",
+        label: "Building",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "room",
+        label: "Room",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "bed",
+        label: "Bed number",
+        type: "text",
+        required: true,
+      },
+    ],
+    states: ["available", "maintenance"],
+  },
+  {
+    kind: "hostel-allocations",
+    area: "hostel",
+    title: "Hostel allocations",
+    description: "Allocate an available bed for a bounded date range.",
+    fields: [
+      {
+        name: "bedId",
+        label: "Bed",
+        type: "text",
+        required: true,
+        relation: "beds",
+      },
+      {
+        name: "startDate",
+        label: "From",
+        type: "date",
+        required: true,
+      },
+      {
+        name: "endDate",
+        label: "Until",
+        type: "date",
+        required: true,
+      },
+    ],
+    states: ["draft", "active", "ended"],
+    student: true,
+  },
+  {
+    kind: "roll-call",
+    area: "hostel",
+    title: "Hostel roll call",
+    description:
+      "Record residence attendance independently of class attendance.",
+    fields: [
+      {
+        name: "status",
+        label: "Attendance",
+        type: "select",
+        required: true,
+        options: ["Present", "Absent", "On approved outpass"],
+      },
+      {
+        name: "note",
+        label: "Note",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["recorded"],
+    student: true,
+  },
+  {
+    kind: "outpasses",
+    area: "hostel",
+    title: "Outpass requests",
+    description: "Review student exit and return with guardian approval.",
+    fields: [
+      {
+        name: "startDate",
+        label: "Exit date",
+        type: "date",
+        required: true,
+      },
+      {
+        name: "endDate",
+        label: "Return date",
+        type: "date",
+        required: true,
+      },
+      {
+        name: "destination",
+        label: "Destination",
+        type: "textarea",
+        required: true,
+      },
+      {
+        name: "guardianApproval",
+        label: "Guardian approval",
+        type: "select",
+        required: true,
+        options: ["Pending", "Granted", "Declined"],
+      },
+    ],
+    states: ["requested", "approved", "out", "returned"],
+    student: true,
+  },
+  {
+    kind: "hostel-visitors",
+    area: "hostel",
+    title: "Hostel visitors",
+    description: "Maintain visitor arrival and departure records.",
+    fields: [
+      {
+        name: "visitor",
+        label: "Visitor name",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "relationship",
+        label: "Relationship",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "purpose",
+        label: "Visit purpose",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["checked-in", "checked-out"],
+    student: true,
+  },
+  {
+    kind: "mess",
+    area: "hostel",
+    title: "Mess menus",
+    description: "Prepare daily meal plans and serving information.",
+    fields: [
+      {
+        name: "meal",
+        label: "Meal",
+        type: "select",
+        required: true,
+        options: ["Breakfast", "Lunch", "Dinner"],
+      },
+      {
+        name: "menu",
+        label: "Menu",
+        type: "textarea",
+        required: true,
+      },
+      {
+        name: "servings",
+        label: "Planned servings",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 5000,
+      },
+    ],
+    states: ["planned", "served"],
+  },
+];

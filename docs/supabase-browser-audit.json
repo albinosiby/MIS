@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-18T05:54:06.329Z",
+  "backend": "supabase",
+  "checks": [
+    {
+      "case": "Admin real Auth login and imported 8/8 setup dashboard",
+      "passed": true
+    },
+    {
+      "case": "Admin saves and publishes notice; persisted after reload",
+      "passed": true
+    },
+    {
+      "case": "Parent real Auth login receives one linked child",
+      "passed": true
+    },
+    {
+      "case": "Admin published notice reaches parent; parent acknowledgement persists after reload",
+      "passed": true
+    },
+    {
+      "case": "Teacher real Auth login and assigned class projection",
+      "passed": true
+    },
+    {
+      "case": "Teacher creates homework through server command",
+      "passed": true
+    },
+    {
+      "case": "Student real Auth login and one-student projection",
+      "passed": true
+    },
+    {
+      "case": "Teacher homework reaches student; student answer is submitted",
+      "passed": true
+    },
+    {
+      "case": "Teacher reviews student answer; linked parent receives 10/10 and feedback",
+      "passed": true
+    },
+    {
+      "case": "Staff real Auth login with no student roster",
+      "passed": true
+    },
+    {
+      "case": "Staff portal displays approved cloud claims without approval/edit controls",
+      "passed": true
+    },
+    {
+      "case": "Anonymous public admission enquiry saved with synthetic attachment metadata",
+      "passed": true
+    },
+    {
+      "case": "Anonymous admission appears in administrator inquiry queue",
+      "passed": true
+    },
+    {
+      "case": "Final production build admin save returns typed success and persists",
+      "passed": true
+    },
+    {
+      "case": "Final production build teacher grading command returns typed success",
+      "passed": true
+    },
+    {
+      "case": "Final build anonymous school-demo request receives saved confirmation",
+      "passed": true
+    },
+    {
+      "case": "Final build public client and server validation errors remain readable; invalid enquiries are rejected",
+      "passed": true
+    }
+  ],
+  "passed": 17,
+  "failed": 0,
+  "scope": "Five real Auth logins; notice publish and acknowledgement; teacher-create → student-submit → teacher-grade → parent-feedback; staff approval visibility; anonymous admission → administrator queue; final-build administrator, portal and public mutations; readable client/server validation."
+}

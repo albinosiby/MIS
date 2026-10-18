@@ -1,0 +1,343 @@
+{
+  "checkedAt": "2026-10-18T11:19:44.151Z",
+  "passed": 84,
+  "total": 84,
+  "checks": [
+    {
+      "case": "admin existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "admin original membership",
+      "passed": true
+    },
+    {
+      "case": "teacher existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "teacher original membership",
+      "passed": true
+    },
+    {
+      "case": "parent existing sign-in",
+      "passed": true
+    },
+    {
+      "case": "parent original membership",
+      "passed": true
+    },
+    {
+      "case": "Isolated synthetic class/subject fixture saved without replacing school records",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot manage admissions",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot manage admissions",
+      "passed": true
+    },
+    {
+      "case": "Administrator creates an inquiry",
+      "passed": true
+    },
+    {
+      "case": "Details cannot forge an offer",
+      "passed": true
+    },
+    {
+      "case": "Application progresses to contacted",
+      "passed": true
+    },
+    {
+      "case": "Application progresses to application",
+      "passed": true
+    },
+    {
+      "case": "Application progresses to assessment",
+      "passed": true
+    },
+    {
+      "case": "Offer requires assessment score",
+      "passed": true
+    },
+    {
+      "case": "Administrator records assessment and offer expiry",
+      "passed": true
+    },
+    {
+      "case": "Assessed applicant receives an offer",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot enroll applicants",
+      "passed": true
+    },
+    {
+      "case": "Document checklist cannot replace a private uploaded file",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot upload another applicant's private file",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot upload an unrelated application file",
+      "passed": true
+    },
+    {
+      "case": "Administrator uploads a private application file",
+      "passed": true
+    },
+    {
+      "case": "Application upload is ready and hides its storage path",
+      "passed": true
+    },
+    {
+      "case": "Administrator downloads the private application PDF",
+      "passed": true
+    },
+    {
+      "case": "Unrelated parent cannot download application bytes",
+      "passed": true
+    },
+    {
+      "case": "Administrator enrolls accepted applicant",
+      "passed": true
+    },
+    {
+      "case": "Issued revoked contents are absent from admin page projection",
+      "passed": true
+    },
+    {
+      "case": "Application links to a persistent student",
+      "passed": true
+    },
+    {
+      "case": "Guardian relationship and student profile persist",
+      "passed": true
+    },
+    {
+      "case": "Admission invoice is dated and linked",
+      "passed": true
+    },
+    {
+      "case": "Enrollment timeline is saved",
+      "passed": true
+    },
+    {
+      "case": "Enrollment retry cannot create another student",
+      "passed": true
+    },
+    {
+      "case": "Parent cannot confirm continuation",
+      "passed": true
+    },
+    {
+      "case": "Admin confirms continuation and rollover directive",
+      "passed": true
+    },
+    {
+      "case": "Continuation retry is rejected",
+      "passed": true
+    },
+    {
+      "case": "Continuation persists without current-year class change",
+      "passed": true
+    },
+    {
+      "case": "A free synthetic timetable period is available",
+      "passed": true
+    },
+    {
+      "case": "Synthetic assessment and draft slot saved",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot issue report cards",
+      "passed": true
+    },
+    {
+      "case": "Allocated teacher submits pre-publication moderation",
+      "passed": true
+    },
+    {
+      "case": "Pending moderation blocks result issue",
+      "passed": true
+    },
+    {
+      "case": "Independent admin decides mark moderation",
+      "passed": true
+    },
+    {
+      "case": "Linked re-evaluation request completes with recorded decision",
+      "passed": true
+    },
+    {
+      "case": "Admin publishes and locks synthetic results",
+      "passed": true
+    },
+    {
+      "case": "A first immutable report exists",
+      "passed": true
+    },
+    {
+      "case": "Admin issues a weighted synthetic transcript",
+      "passed": true
+    },
+    {
+      "case": "Unrelated parent cannot propose corrections",
+      "passed": true
+    },
+    {
+      "case": "Allocated teacher submits a result correction",
+      "passed": true
+    },
+    {
+      "case": "Teacher cannot decide their result request",
+      "passed": true
+    },
+    {
+      "case": "Independent admin approves and versions the result",
+      "passed": true
+    },
+    {
+      "case": "Original result bytes remain unchanged but revoked",
+      "passed": true
+    },
+    {
+      "case": "Corrected result and raw mark persist",
+      "passed": true
+    },
+    {
+      "case": "Dependent transcript is revoked",
+      "passed": true
+    },
+    {
+      "case": "Old report download is denied",
+      "passed": true
+    },
+    {
+      "case": "Corrected report PDF downloads",
+      "passed": true
+    },
+    {
+      "case": "Detached revocation registered for obsolete synthetic source",
+      "passed": true
+    },
+    {
+      "case": "Atomic database guard rejects a review against a detached revoked source",
+      "passed": true
+    },
+    {
+      "case": "Review retry is rejected",
+      "passed": true
+    },
+    {
+      "case": "Admin publishes only the synthetic class timetable",
+      "passed": true
+    },
+    {
+      "case": "Timetable snapshot persists with teacher names",
+      "passed": true
+    },
+    {
+      "case": "Teacher submits own substitution request",
+      "passed": true
+    },
+    {
+      "case": "Unapproved substitution cannot be published",
+      "passed": true
+    },
+    {
+      "case": "Independent admin approves substitution",
+      "passed": true
+    },
+    {
+      "case": "Admin explicitly publishes approved substitution",
+      "passed": true
+    },
+    {
+      "case": "Published cover persists",
+      "passed": true
+    },
+    {
+      "case": "Cancellation retains a decision record",
+      "passed": true
+    },
+    {
+      "case": "Cancelled cover removed from schedule with immutable audit",
+      "passed": true
+    },
+    {
+      "case": "Withdrawal cannot be performed by parent",
+      "passed": true
+    },
+    {
+      "case": "Admin completes synthetic withdrawal and fee treatment",
+      "passed": true
+    },
+    {
+      "case": "Withdrawal timeline and voided invoice persist",
+      "passed": true
+    },
+    {
+      "case": "Synthetic withdrawal posts a balanced reversal journal",
+      "passed": true
+    },
+    {
+      "case": "Vacancy application is created",
+      "passed": true
+    },
+    {
+      "case": "Vacancy application advances to contacted",
+      "passed": true
+    },
+    {
+      "case": "Vacancy application advances to application",
+      "passed": true
+    },
+    {
+      "case": "Vacancy application advances to assessment",
+      "passed": true
+    },
+    {
+      "case": "Vacancy assessment is recorded",
+      "passed": true
+    },
+    {
+      "case": "Vacancy offer is approved",
+      "passed": true
+    },
+    {
+      "case": "Vacancy private identity file is uploaded",
+      "passed": true
+    },
+    {
+      "case": "Vacated seat admits a new student while retaining historical enrolment",
+      "passed": true
+    },
+    {
+      "case": "Class capacity counts active students without deleting history",
+      "passed": true
+    },
+    {
+      "case": "Operational admissions preserve existing setup sign-offs",
+      "passed": true
+    },
+    {
+      "case": "Vacancy test enrolment closes without leaving an active synthetic student",
+      "passed": true
+    },
+    {
+      "case": "Existing students retain their IDs",
+      "passed": true
+    },
+    {
+      "case": "Existing staff retain their IDs",
+      "passed": true
+    }
+  ]
+}

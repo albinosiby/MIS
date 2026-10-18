@@ -1,0 +1,15 @@
+.git/
+node_modules/
+.next/
+.local/
+.env*
+.codex/
+.agents/
+supabase/.temp/
+coverage/
+playwright-report/
+test-results/
+docs/screenshots/
+*.tsbuildinfo
+*.sqlite*
+.DS_Store

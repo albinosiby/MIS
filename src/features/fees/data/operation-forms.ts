@@ -1,0 +1,250 @@
+import { ledgerAccountSchema } from "../schemas/ledger.schema.ts";
+import type { ModuleDefinition } from "../../operations/models/definitions.ts";
+export const forms: ModuleDefinition[] = [
+  {
+    kind: "purchase-payments",
+    area: "fees",
+    title: "Vendor payments",
+    description:
+      "Record a completed bank payment against received purchase stock. This records an offline payment; it does not send money.",
+    states: ["draft", "posted"],
+    fields: [
+      {
+        name: "purchaseOrderId",
+        label: "Purchase order",
+        type: "text",
+        relation: "purchase-orders",
+        required: true,
+      },
+      {
+        name: "amountMinor",
+        label: "Payment in minor units",
+        type: "number",
+        min: 1,
+        max: 100000000,
+        required: true,
+      },
+      {
+        name: "bankReference",
+        label: "Bank payment reference",
+        type: "text",
+        required: true,
+      },
+    ],
+  },
+  {
+    kind: "payment-attempts",
+    area: "fees",
+    title: "Online payment attempts",
+    description:
+      "Review simulated checkout attempts. A simulated success does not pay a live invoice.",
+    fields: [
+      {
+        name: "invoiceId",
+        label: "Invoice",
+        type: "text",
+        required: true,
+        relation: "invoices",
+      },
+      {
+        name: "amountMinor",
+        label: "Amount in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "method",
+        label: "Payment method",
+        type: "select",
+        required: true,
+        options: ["UPI", "Card", "Net banking"],
+      },
+    ],
+    states: ["pending", "simulated-success", "failed"],
+    student: true,
+  },
+  {
+    kind: "refunds",
+    area: "fees",
+    title: "Refund requests",
+    description:
+      "Request, approve and track a refund against a completed payment.",
+    fields: [
+      {
+        name: "paymentId",
+        label: "Payment",
+        type: "text",
+        required: true,
+        relation: "payments",
+      },
+      {
+        name: "amountMinor",
+        label: "Refund amount in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "reason",
+        label: "Reason",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "completed"],
+    student: true,
+  },
+  {
+    kind: "reconciliation",
+    area: "fees",
+    title: "Bank reconciliation",
+    description:
+      "Match a statement reference to a payment; preserve reconciliation history.",
+    fields: [
+      {
+        name: "paymentId",
+        label: "Payment",
+        type: "text",
+        required: true,
+        relation: "payments",
+      },
+      {
+        name: "bankReference",
+        label: "Bank reference",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "amountMinor",
+        label: "Statement amount in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+    ],
+    states: ["unmatched", "matched", "reconciled"],
+  },
+  {
+    kind: "journals",
+    area: "fees",
+    title: "Day-book & journal",
+    description: "Enter balanced journal lines for operational review.",
+    fields: [
+      {
+        name: "debitAccount",
+        label: "Debit account",
+        type: "select",
+        options: ledgerAccountSchema.options,
+        required: true,
+      },
+      {
+        name: "creditAccount",
+        label: "Credit account",
+        type: "select",
+        options: ledgerAccountSchema.options,
+        required: true,
+      },
+      {
+        name: "amountMinor",
+        label: "Amount in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "memo",
+        label: "Narration",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "posted"],
+  },
+  {
+    kind: "payment-plans",
+    area: "fees",
+    title: "Payment plans",
+    description: "Review a student instalment plan before approval.",
+    fields: [
+      {
+        name: "amountMinor",
+        label: "Plan total in minor units",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 100000000,
+      },
+      {
+        name: "instalments",
+        label: "Number of instalments",
+        type: "number",
+        required: true,
+        min: 1,
+        max: 24,
+      },
+      {
+        name: "dueDate",
+        label: "Final due date",
+        type: "date",
+        required: true,
+      },
+    ],
+    states: ["draft", "submitted", "approved", "completed"],
+    student: true,
+  },
+  {
+    kind: "receipt-templates",
+    area: "fees",
+    title: "Receipt templates",
+    description: "Manage school receipt headings, footer and numbering prefix.",
+    fields: [
+      {
+        name: "prefix",
+        label: "Receipt prefix",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "heading",
+        label: "Heading",
+        type: "text",
+        required: true,
+      },
+      {
+        name: "footer",
+        label: "Footer",
+        type: "textarea",
+        required: true,
+      },
+    ],
+    states: ["draft", "published"],
+  },
+  {
+    kind: "gateways",
+    area: "fees",
+    title: "Payment gateway settings",
+    description:
+      "Prepare provider configuration. No gateway is connected and no funds move.",
+    fields: [
+      {
+        name: "provider",
+        label: "Provider",
+        type: "select",
+        required: true,
+        options: ["Razorpay", "Stripe", "PayU", "Other"],
+      },
+      {
+        name: "merchantReference",
+        label: "Merchant reference (no secrets)",
+        type: "text",
+        required: true,
+      },
+    ],
+    states: ["unconfigured"],
+  },
+];

@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-18T06:36:27.697Z",
+  "project": "fxtlcapsytqyzsgcbcvp",
+  "accounts": [
+    {
+      "role": "admin",
+      "email": "admin@greenfield.test",
+      "identityUnchanged": true,
+      "membershipUnchanged": true,
+      "passwordLogin": true,
+      "ownMembershipRls": true
+    },
+    {
+      "role": "teacher",
+      "email": "teacher@greenfield.test",
+      "identityUnchanged": true,
+      "membershipUnchanged": true,
+      "passwordLogin": true,
+      "ownMembershipRls": true
+    },
+    {
+      "role": "staff",
+      "email": "staff@greenfield.test",
+      "identityUnchanged": true,
+      "membershipUnchanged": true,
+      "passwordLogin": true,
+      "ownMembershipRls": true
+    },
+    {
+      "role": "parent",
+      "email": "parent@greenfield.test",
+      "identityUnchanged": true,
+      "membershipUnchanged": true,
+      "passwordLogin": true,
+      "ownMembershipRls": true
+    },
+    {
+      "role": "student",
+      "email": "student@greenfield.test",
+      "identityUnchanged": true,
+      "membershipUnchanged": true,
+      "passwordLogin": true,
+      "ownMembershipRls": true
+    }
+  ]
+}

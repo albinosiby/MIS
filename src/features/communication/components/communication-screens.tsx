@@ -27,6 +27,7 @@ import {
   printSection,
 } from "../../workspace/components/workspace-ui";
 import { putRecord, publishNotice } from "../../workspace/domain/operations";
+import { QuickNoticeComposer } from "./quick-notice-composer";
 import { noticeSchema, reportKeys } from "../schemas/communication.schema";
 import {
   reportTitles,
@@ -91,58 +92,7 @@ export default function CommunicationScreens({
       setError(readableError(e));
     }
   }
-  if (route === "/communication/new")
-    return (
-      <>
-        <Tabs items={tabs} route={route} />
-        <div className="ws-two-column">
-          <Panel title="Compose institutional notice">
-            <DataForm
-              initial={{
-                ...newRecord(y),
-                title: "",
-                body: "",
-                priority: "normal",
-                audience: "guardians",
-                classSectionIds: [],
-                channels: ["App"],
-                status: "draft",
-                scheduledFor: null,
-                recipientIds: [],
-                acknowledgedIds: [],
-              }}
-              fields={fields}
-              submitLabel="Save notice draft"
-              onSave={async (value) => {
-                const parsed = noticeSchema.parse(value);
-                await mutate(
-                  (current) => putRecord(current, "notices", parsed),
-                  "Saved notice draft",
-                );
-                router.push("/communication");
-              }}
-            />
-          </Panel>
-          <Panel title="Dispatch preview">
-            <div className="ws-panel-body">
-              <Badge>Simulation only</Badge>
-              <h3>
-                {y.setup.guardians.length} guardians · {y.setup.staff.length}{" "}
-                staff
-              </h3>
-              <p>
-                Recipient lists are built from the saved student/guardian links.
-                Messages are not delivered to external providers.
-              </p>
-              <p>
-                Save the draft, then publish immediately or set a scheduled date
-                from the noticeboard.
-              </p>
-            </div>
-          </Panel>
-        </div>
-      </>
-    );
+  if (route === "/communication/new") return <QuickNoticeComposer />;
   if (route === "/reports")
     return (
       <>

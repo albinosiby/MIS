@@ -10,6 +10,7 @@ import { SchoolShell } from "@/components/layout/school-shell";
 import { useWorkspace } from "../hooks/workspace-provider";
 import { getScreen, titleRoutes } from "../data/screen-catalog";
 import { Badge, LinkButton } from "./workspace-ui";
+import { FirstRowHeader, firstRowPages } from "./first-row-header";
 import "../../school-setup/styles/setup-wizard.css";
 import "../../school-setup/styles/setup-config.css";
 import "../styles/workspace.css";
@@ -44,8 +45,15 @@ export type WorkspaceScreenProps = {
   search: string;
 };
 function RoleAwareShell(props: ComponentProps<typeof SchoolShell>) {
-  const actor = useIdentity(); const route = usePathname();
-  return actor && !["admin", "principal"].includes(actor.role) ? <OperationsShell actor={actor} route={route}>{props.children}</OperationsShell> : <SchoolShell {...props} />;
+  const actor = useIdentity();
+  const route = usePathname();
+  return actor && !["admin", "principal"].includes(actor.role) ? (
+    <OperationsShell actor={actor} route={route}>
+      {props.children}
+    </OperationsShell>
+  ) : (
+    <SchoolShell {...props} />
+  );
 }
 export function WorkspaceScreen({
   route,
@@ -74,6 +82,9 @@ export function WorkspaceScreen({
     settings: Settings,
   };
   const Content = components[screen[2]];
+  const firstRowRoute = Object.hasOwn(firstRowPages, route)
+    ? (route as keyof typeof firstRowPages)
+    : null;
   const descriptions: Record<string, string> = {
     dashboard: "Campus operations, approvals and the institutional calendar.",
     admissions:
@@ -118,21 +129,26 @@ export function WorkspaceScreen({
         void switchYear(id).catch((e) => setFeedback(e.message))
       }
     >
-      <main id="main-content" className={`ws-content ws-${screen[2]}`}>
-        {!["/dashboard", "/admissions", "/timetable", "/settings"].includes(
-          route,
-        ) && (
-          <header className="ws-page-header">
-            <div>
-              <h1>{screen[1]}</h1>
-              <p>{descriptions[screen[2]]}</p>
-            </div>
-            <div className="ws-actions">
-              <Badge tone="green">AY {year.setup.calendar.year.name}</Badge>
-              <Badge>School workspace</Badge>
-            </div>
-          </header>
-        )}
+      <main
+        id="main-content"
+        className={`ws-content ws-${screen[2]} ${firstRowRoute ? "fr-page" : ""}`}
+      >
+        {firstRowRoute && <FirstRowHeader route={firstRowRoute} />}
+        {!firstRowRoute &&
+          !["/dashboard", "/admissions", "/timetable", "/settings"].includes(
+            route,
+          ) && (
+            <header className="ws-page-header">
+              <div>
+                <h1>{screen[1]}</h1>
+                <p>{descriptions[screen[2]]}</p>
+              </div>
+              <div className="ws-actions">
+                <Badge tone="green">AY {year.setup.calendar.year.name}</Badge>
+                <Badge>School workspace</Badge>
+              </div>
+            </header>
+          )}
         {year.locked && (
           <p className="config-success" role="status">
             Archived academic year · Read-only historical records

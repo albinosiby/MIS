@@ -4,7 +4,7 @@ Every route below has implemented workspace UI and is connected to the shared pe
 
 | Screen | Route | Figma node | Design basis |
 | --- | --- | --- | --- |
-| Live Operations | /dashboard | 1106:4493 | Pasted content + design system; visual comparison pending |
+| Live Operations | /dashboard | 1106:4493 | Design-system Dashboard refreshed 19 October 2026; desktop/mobile and interactions reviewed; exact Figma comparison pending connector quota. See dashboard-design-system-verification.md. |
 | Administrative Approvals Inbox | /dashboard/approvals | 1106:11932 | Pasted content + design system; visual comparison pending |
 | Academic Calendar | /dashboard/calendar | 1106:12540 | Pasted content + design system; visual comparison pending |
 | Add Academic Event | /dashboard/calendar/new | 1106:13297 | Pasted content + design system; visual comparison pending |

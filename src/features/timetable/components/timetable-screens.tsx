@@ -35,7 +35,8 @@ import {
   scope,
 } from "../../workspace/domain/operations";
 import { readableError } from "../../school-setup/components/form-errors";
-import { substitutionSchema } from "../schemas/timetable.schema";
+import { SubstituteAssignmentDialog } from "./substitute-assignment-dialog";
+import { Metrics } from "../../workspace/components/workspace-ui";
 const weekdays = [
   "Monday",
   "Tuesday",
@@ -136,70 +137,43 @@ export default function TimetableScreens({
           <LinkButton href="/timetable">← Master timetable</LinkButton>
           <LinkButton href="/attendance/leave">Leave requests</LinkButton>
           <Button
-            disabled={!y.records.slots.length}
+            disabled={!y.records.slots.length || y.locked}
             onClick={() =>
               setEditor(
-                <Dialog
-                  title="Assign substitute teacher"
-                  onClose={() => setEditor(null)}
-                >
-                  <DataForm
-                    initial={{
-                      slotId: y.records.slots[0]?.id,
-                      date,
-                      substituteStaffId: "",
-                      reason: "",
-                      status: "draft",
-                    }}
-                    fields={[
-                      {
-                        name: "slotId",
-                        label: "Uncovered slot",
-                        type: "select",
-                        options: slotOptions,
-                      },
-                      {
-                        name: "date",
-                        label: "Substitution date",
-                        type: "date",
-                      },
-                      {
-                        name: "substituteStaffId",
-                        label: "Substitute teacher",
-                        type: "select",
-                        options: staff,
-                      },
-                      {
-                        name: "reason",
-                        label: "Reason / handover notes (8+ characters)",
-                        type: "textarea",
-                      },
-                    ]}
-                    onSave={async (value) => {
-                      const data = value as Record<string, unknown>;
-                      await mutate((current) => {
-                        const slot = current.records.slots.find(
-                          (s) => s.id === data.slotId,
-                        );
-                        if (!slot)
-                          throw new Error("Slot is no longer available.");
-                        const record = substitutionSchema.parse({
-                          ...newRecord(current),
-                          ...data,
-                          absentStaffId: slot.staffId,
-                        });
-                        return putRecord(current, "substitutions", record);
-                      }, "Assigned substitute teacher");
-                      setEditor(null);
-                    }}
-                  />
-                </Dialog>,
+                <SubstituteAssignmentDialog onClose={() => setEditor(null)} />,
               )
             }
           >
             Assign Substitute Teacher
           </Button>
         </div>
+        <Metrics
+          items={[
+            {
+              label: "Scheduled slots",
+              value: y.records.slots.length,
+              detail: "Choose a class and period to arrange cover",
+            },
+            {
+              label: "Draft allotments",
+              value: y.records.substitutions.filter((s) => s.status === "draft")
+                .length,
+              detail: "Awaiting publication",
+            },
+            {
+              label: "Published allotments",
+              value: y.records.substitutions.filter(
+                (s) => s.status === "published",
+              ).length,
+              detail: "Saved coverage for the academic year",
+            },
+          ]}
+        />
+        {!y.records.slots.length && (
+          <p className="fr-note">
+            Create timetable slots before assigning a substitute.
+          </p>
+        )}
         <Panel title="Faculty substitution ledger">
           <Table
             headers={[
@@ -271,8 +245,8 @@ export default function TimetableScreens({
                               )
                             }
                           >
-                            This removes the allotment and frees the
-                            substitute period.
+                            This removes the allotment and frees the substitute
+                            period.
                           </ConfirmAction>,
                         )
                       }

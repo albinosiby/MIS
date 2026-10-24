@@ -1,5 +1,6 @@
 "use client";
 import { useState, type ReactNode } from "react";
+import { AdmissionsFirstRow } from "./admissions-first-row";
 import { academicReferenceDate } from "../../workspace/domain/form-values";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -76,6 +77,8 @@ export default function AdmissionsScreens({
   const [editor, setEditor] = useState<ReactNode>(null),
     [error, setError] = useState(""),
     [stage, setStage] = useState("all");
+  if (route === "/admissions/inquiries" || route === "/admissions/analytics")
+    return <AdmissionsFirstRow route={route} search={search} />;
   const r = y.records;
   const classes = classOptions(y),
     staff = staffOptions(y);
@@ -858,7 +861,11 @@ export default function AdmissionsScreens({
             <div className="ws-panel-body">
               {y.setup.classes.slice(0, 3).map((c) => {
                 const count = y.setup.students.filter(
-                  (s) => s.classSectionId === c.id&&!y.records.studentProfiles.some(p=>p.studentId===s.id&&p.status!=="active"),
+                  (s) =>
+                    s.classSectionId === c.id &&
+                    !y.records.studentProfiles.some(
+                      (p) => p.studentId === s.id && p.status !== "active",
+                    ),
                 ).length;
                 return (
                   <div key={c.id}>
@@ -913,7 +920,9 @@ export default function AdmissionsScreens({
           + New enquiry
         </LinkButton>
         <ExportButton name="admissions" rows={rows} report="admissions" />
-        <LinkButton href="/admissions/completion">Complete admission & continuation</LinkButton>
+        <LinkButton href="/admissions/completion">
+          Complete admission & continuation
+        </LinkButton>
       </div>
       {error && (
         <p className="config-errors" role="alert">
@@ -947,7 +956,11 @@ export default function AdmissionsScreens({
               ]}
               rows={y.setup.classes.map((c) => {
                 const count = y.setup.students.filter(
-                  (s) => s.classSectionId === c.id&&!y.records.studentProfiles.some(p=>p.studentId===s.id&&p.status!=="active"),
+                  (s) =>
+                    s.classSectionId === c.id &&
+                    !y.records.studentProfiles.some(
+                      (p) => p.studentId === s.id && p.status !== "active",
+                    ),
                 ).length;
                 return [
                   labelFor(classes, c.id),
@@ -980,65 +993,6 @@ export default function AdmissionsScreens({
             )}
           </Panel>
         </>
-      ) : route === "/admissions/analytics" ? (
-        <Panel title="Stage-by-stage conversion funnel">
-          <div className="ws-panel-body">
-            {[
-              "new",
-              "contacted",
-              "application",
-              "assessment",
-              "offered",
-              "enrolled",
-            ].map((s, i) => {
-              const count = r.inquiries.filter(
-                (v) =>
-                  [
-                    "new",
-                    "contacted",
-                    "campus_visit",
-                    "application",
-                    "assessment",
-                    "offered",
-                    "waitlisted",
-                    "enrolled",
-                  ].indexOf(v.stage) >=
-                    [
-                      "new",
-                      "contacted",
-                      "campus_visit",
-                      "application",
-                      "assessment",
-                      "offered",
-                      "waitlisted",
-                      "enrolled",
-                    ].indexOf(s) && v.stage !== "lost",
-              ).length;
-              return (
-                <div key={s}>
-                  <h3>
-                    {i + 1}. {s.replaceAll("_", " ")} · {count}
-                  </h3>
-                  <div className="ws-progress">
-                    <span
-                      style={{
-                        width:
-                          (r.inquiries.length
-                            ? (count / r.inquiries.length) * 100
-                            : 0) + "%",
-                      }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-            <p>
-              Closed inquiries:{" "}
-              {r.inquiries.filter((v) => v.stage === "lost").length}. Values are
-              calculated from the saved pipeline.
-            </p>
-          </div>
-        </Panel>
       ) : route === "/admissions/reenrolment" ? (
         <Panel title="Re-enrolment intent">
           <Table

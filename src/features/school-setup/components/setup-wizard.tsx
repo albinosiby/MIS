@@ -22,7 +22,9 @@ import {
   exceptionQuerySchema,
   setupWizardSnapshotSchema,
 } from "../schemas/setup-wizard.schema";
-import { SetupOverview } from "./setup-overview";
+import { FirstRowHeader } from "../../workspace/components/first-row-header";
+import { LinkButton } from "../../workspace/components/workspace-ui";
+import { MigrationResume } from "./migration-resume";
 import { SetupPipeline } from "./setup-pipeline";
 import { SetupGovernance } from "./setup-governance";
 import "../styles/setup-wizard.css";
@@ -230,24 +232,63 @@ export function SetupWizard({ step }: { step?: SetupStepId }) {
         void switchYear(id).catch((error) => setNotice(readableError(error)))
       }
     >
-      <main id="main-content" className="setup-content">
-        {step ? (
+      <main
+        id="main-content"
+        className={`setup-content ${!step || step === "data-ingestion" ? "fr-page" : ""}`}
+      >
+        {step === "data-ingestion" ? (
+          <>
+            <FirstRowHeader route="/school-setup/data-ingestion" />
+            <MigrationResume key={config.calendar.year.id} />
+          </>
+        ) : step ? (
           <SetupStepForm
             key={`${config.calendar.year.id}-${step}-${config.revision}`}
             step={step}
           />
         ) : (
           <>
-            <SetupOverview
-              referenceDate={academicReferenceDate(
-                config.calendar.year,
-                "10-17",
-              )}
-              inspect={inspect}
-              summary={summary}
-              school={schoolProfile}
-              principal={principal}
-            />
+            <FirstRowHeader route="/school-setup" />
+            <div className="fr-toolbar">
+              <p>
+                Eight connected phases for academic year{" "}
+                {config.calendar.year.name}.
+              </p>
+              <div className="ws-actions">
+                <LinkButton href="/school-setup/data-ingestion">
+                  Resume migration
+                </LinkButton>
+                <LinkButton
+                  variant="default"
+                  href={`/school-setup/${phases.find((p) => p.status === "in_progress")?.id ?? "school-profile"}`}
+                >
+                  {config.completed.length === 8
+                    ? "Review configuration"
+                    : "Continue current phase"}
+                </LinkButton>
+              </div>
+            </div>
+            <section
+              className="fr-setup-summary"
+              aria-label="School setup summary"
+            >
+              <div>
+                <span>Setup complete</span>
+                <strong>{summary.completionPercent}%</strong>
+              </div>
+              <div>
+                <span>Student records</span>
+                <strong>{config.students.length}</strong>
+              </div>
+              <div>
+                <span>Unresolved exceptions</span>
+                <strong>{records.length}</strong>
+              </div>
+              <div>
+                <span>Class sections</span>
+                <strong>{config.classes.length}</strong>
+              </div>
+            </section>
             <SetupPipeline inspect={inspect} phases={phases} />
             <SetupWorkspaceTools />
             {config.completed.length === 8 && (
@@ -272,9 +313,9 @@ export function SetupWizard({ step }: { step?: SetupStepId }) {
                     </div>
                     <div className="exceptions-header-bottom">
                       <p>
-                        Records quarantined from AY 2025–26 promotion
+                        Saved student data ingestion records
                         <br />
-                        batch awaiting administrative remediation.
+                        awaiting administrative review.
                       </p>
                       <div>
                         <Button

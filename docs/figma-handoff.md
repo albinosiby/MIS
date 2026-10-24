@@ -1,5 +1,9 @@
 # Figma Implementation Handoff
 
+## Dashboard update — 19 October 2026
+
+The first-row implementation sequence is approved, starting with Dashboard `1106:4493`. `/dashboard` now uses a dedicated design-system presentation with existing validated school-year records, responsive cards, admissions stage distribution, setup progress, class capacity and operational priorities. Detailed context and screenshot requests on `albinosiby1@gmail.com` remain blocked by its Starter-plan quota; exact Figma parity is pending. See [Dashboard verification](dashboard-design-system-verification.md) for passing checks, browser coverage and synthetic-data screenshots. Other first-row screens await their individual design pass.
+
 ## Current state
 
 The Setup Wizard has been read and implemented using the `albino` connection, verified as `albinosiby1@gmail.com`. Source: [School Admin Web section](https://www.figma.com/design/7hcXAtbVJacV9atgx2f9Ii/School-Admin-Web?node-id=1106-188). No Figma content has been modified.
